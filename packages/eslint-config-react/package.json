@@ -1,6 +1,6 @@
 {
-  "name": "@yoo-digital/eslint-config-base",
-  "description": "ESLint configuration file containing rules for TypeScript projects",
+  "name": "@yoo-digital/eslint-config-react",
+  "description": "ESLint configuration file containing rules for React projects using TypeScript",
   "version": "3.0.0-canary.0",
   "license": "MIT",
   "publishConfig": {
@@ -8,12 +8,13 @@
   },
   "keywords": [
     "TypeScript",
+    "React",
     "ESLint"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:yoo-digital/typescript.git",
-    "directory": "packages/eslint-config-base"
+    "url": "git@github.com:yoo-digital/config.git",
+    "directory": "packages/eslint-config-react"
   },
   "author": {
     "name": "YOO AG",
@@ -77,13 +78,16 @@
     "npm": ">= 9"
   },
   "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0"
+    "@yoo-digital/eslint-config-base": "^3.0.0-canary.0",
+    "eslint-config-airbnb": "^19.0.4"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
     "eslint": "^8.56.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1"
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }

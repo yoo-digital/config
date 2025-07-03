@@ -1,16 +1,19 @@
 {
-  "name": "@yoo-digital/typescript",
-  "description": "Mono repository containing reusable configuration/setup files for TypeScript projects within YOO",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@yoo-digital/eslint-config-base",
+  "description": "ESLint configuration file containing rules for TypeScript projects",
+  "version": "3.0.0-canary.0",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "TypeScript",
-    "Mono Repository"
+    "ESLint"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:yoo-digital/typescript.git"
+    "url": "git@github.com:yoo-digital/config.git",
+    "directory": "packages/eslint-config-base"
   },
   "author": {
     "name": "YOO AG",
@@ -59,27 +62,28 @@
       "email": "yanick.recher@yoo.digital"
     }
   ],
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
+  },
   "engines": {
     "node": ">= 18",
     "npm": ">= 9"
   },
-  "workspaces": [
-    "packages/*"
-  ],
-  "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "changed": "lerna changed",
-    "publish:ci": "lerna publish from-package --yes",
-    "publish:ci:canary": "lerna publish from-package --yes",
-    "publish:manual": "lerna publish",
-    "version:ci": "lerna version --exact --conventional-commits --changelog-preset conventionalcommits --conventional-graduate --yes",
-    "version:ci:canary": "lerna version --exact --conventional-commits --changelog-preset conventionalcommits --conventional-prerelease --conventional-bump-prerelease --preid canary --yes",
-    "version:manual": "lerna version"
+  "dependencies": {
+    "eslint-config-airbnb-base": "^15.0.0"
   },
-  "devDependencies": {
-    "@yoo-digital/prettier": "^1.0.4",
-    "conventional-changelog-conventionalcommits": "^7.0.2",
-    "lerna": "^8.1.8"
-  },
-  "prettier": "@yoo-digital/prettier"
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1"
+  }
 }

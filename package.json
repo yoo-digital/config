@@ -1,14 +1,85 @@
 {
   "name": "@yoo-digital/config",
+  "description": "YOO configuration mono repository containing reusable configurations for web projects.",
   "version": "0.0.1",
   "private": true,
+  "license": "MIT",
+  "keywords": [
+    "YOO",
+    "Mono Repository",
+    "Configuration",
+    "Prettier",
+    "ESLint",
+    "TypeScript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yoo-digital/config.git"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yoo.digital"
+    },
+    {
+      "name": "Hervé Brunner",
+      "email": "herve.brunner@yoo.digital"
+    },
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yoo.digital"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Sébastien Closs",
+      "email": "sebastien.closs@yoo.digital"
+    },
+    {
+      "name": "Tobias Wahl",
+      "email": "tobias.wahl@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yoo.digital"
+    }
+  ],
+  "scripts": {
+    "changeset": "changeset",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish",
+    "changeset:status": "changeset status"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "@yoo-digital/prettier": "*",
+    "turbo": "^2.5.4"
+  },
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "^22.0.0",
+    "npm": "^11.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "prettier": "@yoo-digital/prettier"
 }
