@@ -1,0 +1,88 @@
+{{ loadCssComponent('episode-hero') }}
+
+<section class="episode-hero">
+    <div class="episode-hero__wrapper">
+        <div class="episode-hero__video-container">
+            {% embed '_components/video-player.twig'
+                with {
+                    episode: episode,
+                    markers: topicMarkers ?? [],
+                    fallbackUrl: episode == null
+                        ? broadcastHomeTeaser.url ?? ''
+                        : '',
+                    fallbackImage: broadcastHomeTeaser.image.one() ?? null,
+                    setStructuredData: setStructuredData ?? false,
+                    url: getVideoUrlByBroadcast(episode)
+                }
+            %}
+                {% block overlayContent %}
+                    {% set overlayColor = broadcastHomeTeaser is defined
+                        ? broadcastHomeTeaser.formatColor
+                        : entry.formatColor
+                    %}
+                    {% include '_components/video-overlay-graphic.twig' with {
+                        color: overlayColor
+                    } %}
+                {% endblock %}
+            {% endembed %}
+        </div>
+        <div class="episode-hero__details">
+            <div class="episode-hero__content-wrapper">
+                {% if episode is defined and episode != null %}
+                    <h2 class="episode-hero__time-container">
+                        <span class="episode-hero__time">
+                            {{ episode.eventDate }}
+                        </span>
+                        {% if isNewestEpisode ?? true %}
+                            <span class="episode-hero__time episode-hero__time--alt">
+                                Neuste Folge
+                            </span>
+                        {% endif %}
+                    </h2>
+                    {% if showTitle ?? true %}
+                        <div class="episode-hero__title">
+                            {{ episode.title }}
+                        </div>
+                    {% endif %}
+                {% endif %}
+                <div class="episode-hero__description">
+                    {% block description -%}
+                        {{- episode.description -}}
+                    {%- endblock %}
+
+                    <span>
+                        {% embed '_components/modal.twig'
+                            with {
+                                classes: 'modal--share',
+                                openButtonClass: 'footer__footer-link'
+                            }
+                        %}
+                            {% block headerTitle %}
+                                video teilen
+                            {% endblock %}
+                            {% block content %}
+                                {% include '_components/share-content.twig' with {
+                                    episodeTitle: episode.title
+                                } %}
+                            {% endblock %}
+                            {% block openButton %}
+                                <button type="button"
+                                    class="modal__open-button footer__footer-link">
+                                    <div class="episode-hero__action-container">
+                                        <div class="episode-hero__share-container">
+                                            <span class="episode-hero__share-icon icon-24 icon-share"></span>
+                                            <span class="episode-hero__share-label">
+                                                sendung teilen
+                                            </span>
+                                        </div>
+                                    </div>
+                                </button>
+                            {% endblock %}
+                            {% block openButtonContent -%}{% endblock %}
+                        {% endembed %}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

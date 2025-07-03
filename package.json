@@ -1,0 +1,31 @@
+{
+  "name": "@yoo-digital/prettier",
+  "version": "1.2.1",
+  "description": "Reusable prettier configuration for projects within YOO AG",
+  "main": "index.js",
+  "repository": "git@github.com:yoo-digital/prettier.git",
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    }
+  ],
+  "dependencies": {
+    "@prettier/plugin-php": "~0.22.2",
+    "prettier-plugin-css-order": "~2.0.1",
+    "prettier-plugin-organize-attributes": "~1.0.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0"
+  },
+  "peerDependencies": {
+    "prettier": "^3"
+  }
+}
