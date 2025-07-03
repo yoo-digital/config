@@ -1,0 +1,50 @@
+name: Publish Packages to NPM
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_YOO_DIGITAL }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Node.js and NPM
+        uses: actions/setup-node@v2
+        with:
+          node-version: 18
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Setup Git user
+        run: |
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor}}@users.noreply.github.com"
+
+      - name: Point to npm registry
+        run: |
+          echo "//registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN" > .npmrc
+
+      - name: Publish packages to NPM
+        if: github.ref == 'refs/heads/master'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm run version:ci
+          npm run publish:ci
+
+      - name: Publish packages as canary to NPM
+        if: github.ref == 'refs/heads/develop'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npm run version:ci:canary
+          npm run publish:ci:canary

@@ -1,0 +1,85 @@
+{
+  "name": "@yoo-digital/typescript",
+  "description": "Mono repository containing reusable configuration/setup files for TypeScript projects within YOO",
+  "private": true,
+  "version": "0.0.0",
+  "license": "MIT",
+  "keywords": [
+    "TypeScript",
+    "Mono Repository"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yoo-digital/typescript.git"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yoo.digital"
+    },
+    {
+      "name": "Hervé Brunner",
+      "email": "herve.brunner@yoo.digital"
+    },
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yoo.digital"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Sébastien Closs",
+      "email": "sebastien.closs@yoo.digital"
+    },
+    {
+      "name": "Tobias Wahl",
+      "email": "tobias.wahl@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yoo.digital"
+    }
+  ],
+  "engines": {
+    "node": ">= 18",
+    "npm": ">= 9"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "changed": "lerna changed",
+    "publish:ci": "lerna publish from-package --yes",
+    "publish:ci:canary": "lerna publish from-package --yes",
+    "publish:manual": "lerna publish",
+    "version:ci": "lerna version --exact --conventional-commits --changelog-preset conventionalcommits --conventional-graduate --yes",
+    "version:ci:canary": "lerna version --exact --conventional-commits --changelog-preset conventionalcommits --conventional-prerelease --conventional-bump-prerelease --preid canary --yes",
+    "version:manual": "lerna version"
+  },
+  "devDependencies": {
+    "@yoo-digital/prettier": "^1.0.4",
+    "conventional-changelog-conventionalcommits": "^7.0.2",
+    "lerna": "^8.1.8"
+  },
+  "prettier": "@yoo-digital/prettier"
+}
