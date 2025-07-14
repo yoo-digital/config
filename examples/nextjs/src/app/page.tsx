@@ -1,5 +1,5 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Image from 'next/image';
+import styles from './page.module.css';
 
 const MainContent = (): React.JSX.Element => (
   <main className={styles.main}>

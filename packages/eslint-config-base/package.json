@@ -62,21 +62,34 @@
       "email": "yanick.recher@yoo.digital"
     }
   ],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./eslint.config.mjs",
+      "require": "./eslint.config.mjs"
+    },
+    "./legacy": {
+      "import": "./index.js",
+      "require": "./index.js"
+    }
+  },
   "files": [
     "LICENSE",
     "README.md",
     "index.js",
+    "eslint.config.mjs",
     "tsconfig.json"
   ],
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0"
-  },
+  "dependencies": {},
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1"
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.36.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0"
   }
 }

@@ -63,16 +63,25 @@
       "email": "yanick.recher@yoo.digital"
     }
   ],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./eslint.config.mjs",
+      "require": "./eslint.config.mjs"
+    },
+    "./legacy": {
+      "import": "./index.js",
+      "require": "./index.js"
+    }
+  },
   "files": [
     "LICENSE",
     "README.md",
     "index.js",
+    "eslint.config.mjs",
     "tsconfig.json"
   ],
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "3.0.0-canary.0",
-    "eslint-config-airbnb": "^19.0.4"
+    "@yoo-digital/eslint-config-base": "3.0.0-canary.0"
   },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.0.2",
