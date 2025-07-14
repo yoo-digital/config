@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "@yoo-digital/eslint-config-react"
+  ]
+}

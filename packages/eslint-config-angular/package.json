@@ -70,9 +70,6 @@
     "index.js",
     "tsconfig.json"
   ],
-  "scripts": {
-    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
-  },
   "peerDependencies": {
     "@angular-eslint/builder": "^18.0.0",
     "@angular-eslint/eslint-plugin": "^18.0.0",

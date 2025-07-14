@@ -70,11 +70,8 @@
     "index.js",
     "tsconfig.json"
   ],
-  "scripts": {
-    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
-  },
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "^3.0.0-canary.0",
+    "@yoo-digital/eslint-config-base": "3.0.0-canary.0",
     "eslint-config-airbnb": "^19.0.4"
   },
   "peerDependencies": {

@@ -69,9 +69,6 @@
     "index.js",
     "tsconfig.json"
   ],
-  "scripts": {
-    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
-  },
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0"
   },

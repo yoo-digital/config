@@ -1,0 +1,12 @@
+{
+  "extends": [
+    "@yoo-digital/eslint-config-react"
+  ],
+  "parserOptions": {
+    "project": [
+      "./tsconfig.app.json",
+      "./tsconfig.node.json"
+    ],
+    "tsconfigRootDir": "./"
+  }
+}
