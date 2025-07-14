@@ -72,10 +72,6 @@
   "scripts": {
     "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
   },
-  "engines": {
-    "node": ">= 18",
-    "npm": ">= 9"
-  },
   "dependencies": {
     "eslint-config-airbnb-base": "^15.0.0"
   },

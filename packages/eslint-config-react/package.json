@@ -73,10 +73,6 @@
   "scripts": {
     "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
   },
-  "engines": {
-    "node": ">= 18",
-    "npm": ">= 9"
-  },
   "dependencies": {
     "@yoo-digital/eslint-config-base": "^3.0.0-canary.0",
     "eslint-config-airbnb": "^19.0.4"

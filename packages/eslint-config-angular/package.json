@@ -73,10 +73,6 @@
   "scripts": {
     "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
   },
-  "engines": {
-    "node": ">= 18",
-    "npm": ">= 9"
-  },
   "peerDependencies": {
     "@angular-eslint/builder": "^18.0.0",
     "@angular-eslint/eslint-plugin": "^18.0.0",
