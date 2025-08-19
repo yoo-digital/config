@@ -10,6 +10,10 @@
     "@yoo-digital/prettier": "1.2.1"
   },
   "changesets": [
-    "tame-plums-warn"
+    "large-ghosts-open",
+    "solid-dingos-prove",
+    "some-bugs-notice",
+    "tame-plums-warn",
+    "thirty-jokes-float"
   ]
 }

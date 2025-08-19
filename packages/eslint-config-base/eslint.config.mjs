@@ -1,7 +1,6 @@
 // @ts-check
 import eslint from '@eslint/js';
 import importPlugin from 'eslint-plugin-import';
-import ts from 'typescript';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
@@ -18,6 +17,14 @@ export default tseslint.config(
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
+      },
+    },
+    settings: {
+      'import/resolver': {
+        node: {
+          extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx'],
+        },
+        typescript: {},
       },
     },
   },
