@@ -10,6 +10,8 @@
     "@yoo-digital/prettier": "1.2.1"
   },
   "changesets": [
+    "large-ghosts-open",
+    "solid-dingos-prove",
     "tame-plums-warn"
   ]
 }
