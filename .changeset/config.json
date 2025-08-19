@@ -19,5 +19,7 @@
   "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": [
+    "@yoo-digital/example-*"
+  ]
 }
