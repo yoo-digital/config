@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.0-canary.1
+
+### Major Changes
+
+- d81898d: This version provides all new eslint flat-config that is no longer based on the airbnb-eslint config. Instead these new eslint configurations are based on the recommended eslint rules from TODO
+
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 

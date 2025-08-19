@@ -1,0 +1,15 @@
+{
+  "mode": "pre",
+  "tag": "canary",
+  "initialVersions": {
+    "@yoo-digital/example-nextjs": "0.0.0",
+    "@yoo-digital/example-vite-react-ts": "0.0.0",
+    "@yoo-digital/eslint-config-angular": "18.0.0",
+    "@yoo-digital/eslint-config-base": "3.0.0-canary.0",
+    "@yoo-digital/eslint-config-react": "3.0.0-canary.0",
+    "@yoo-digital/prettier": "1.2.1"
+  },
+  "changesets": [
+    "tame-plums-warn"
+  ]
+}
