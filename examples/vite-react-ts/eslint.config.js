@@ -1,6 +1,5 @@
 import js from '@eslint/js';
 import yooEslintConfigReact from '@yoo-digital/eslint-config-react';
-import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
@@ -13,7 +12,6 @@ export default tseslint.config([
       js.configs.recommended,
       ...tseslint.configs.recommended,
       ...yooEslintConfigReact,
-      // reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
     ],
     languageOptions: {
