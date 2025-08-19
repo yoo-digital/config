@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-react",
   "description": "ESLint configuration file containing rules for React projects using TypeScript",
-  "version": "3.0.0-canary.1",
+  "version": "3.0.0-canary.4",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -81,7 +81,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "3.0.0-canary.1"
+    "@yoo-digital/eslint-config-base": "3.0.0-canary.4"
   },
   "peerDependencies": {
     "eslint": "^9",

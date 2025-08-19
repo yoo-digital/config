@@ -1,5 +1,29 @@
 # Change Log
 
+## 3.0.0-canary.4
+
+### Patch Changes
+
+- add eslint-import-resolver-typescript as a dependency
+- Updated dependencies
+  - @yoo-digital/eslint-config-base@3.0.0-canary.4
+
+## 3.0.0-canary.3
+
+### Patch Changes
+
+- chore: remove import/resolver.typescript entry
+- Updated dependencies
+  - @yoo-digital/eslint-config-base@3.0.0-canary.3
+
+## 3.0.0-canary.2
+
+### Patch Changes
+
+- Readd import/resolver settings
+- Updated dependencies
+  - @yoo-digital/eslint-config-base@3.0.0-canary.2
+
 ## 3.0.0-canary.1
 
 ### Major Changes
