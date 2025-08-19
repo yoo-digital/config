@@ -1,6 +1,5 @@
 // @ts-check
 import eslint from '@eslint/js';
-import reactConfig from 'eslint-plugin-react';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
