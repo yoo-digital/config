@@ -11,6 +11,11 @@ const compat = new FlatCompat({
   recommendedConfig: yooEslintConfigReact,
 });
 
-const eslintConfig = [...compat.extends('next/core-web-vitals', 'next/typescript')];
+const eslintConfig = [
+  {
+    ignores: ['node_modules/**', 'dist/**', 'build/**', '.next/**'],
+  },
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+];
 
 export default eslintConfig;
