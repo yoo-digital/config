@@ -1,18 +1,9 @@
-import { FlatCompat } from '@eslint/eslintrc';
 import js from '@eslint/js';
+import yooEslintConfigReact from '@yoo-digital/eslint-config-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import reactRefresh from 'eslint-plugin-react-refresh';
 import globals from 'globals';
-import { dirname } from 'path';
 import tseslint from 'typescript-eslint';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
 
 export default tseslint.config([
   { ignores: ['dist'] },
@@ -21,8 +12,8 @@ export default tseslint.config([
     extends: [
       js.configs.recommended,
       ...tseslint.configs.recommended,
-      ...compat.extends('@yoo-digital/eslint-config-react'),
-      reactHooks.configs['recommended-latest'],
+      ...yooEslintConfigReact,
+      // reactHooks.configs['recommended-latest'],
       reactRefresh.configs.vite,
     ],
     languageOptions: {

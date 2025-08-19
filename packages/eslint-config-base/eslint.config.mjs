@@ -1,12 +1,25 @@
 // @ts-check
 import eslint from '@eslint/js';
+import importPlugin from 'eslint-plugin-import';
+import ts from 'typescript';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   eslint.configs.recommended,
+  // importPlugin.flatConfigs.recommended,
   {
     files: ['**/*.ts', '**/*.tsx'],
-    extends: [tseslint.configs.recommended],
+    extends: [
+      tseslint.configs.recommendedTypeChecked,
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
+    ],
+    languageOptions: {
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
   },
   {
     rules: {
@@ -84,7 +97,13 @@ export default tseslint.config(
       'import/no-extraneous-dependencies': [
         'error',
         {
-          devDependencies: ['.storybook/**', 'stories/**', '**/*.test.*', '**/*.spec.*'],
+          devDependencies: [
+            '.storybook/**',
+            'stories/**',
+            '**/*.test.*',
+            '**/*.spec.*',
+            '*.config.{js,ts,mjs}',
+          ],
         },
       ],
 

@@ -43,13 +43,7 @@ export default [
       'react/jsx-pascal-case': 'error',
       'react/no-array-index-key': 'warn',
       'react/no-unstable-nested-components': ['error', { allowAsProps: true }],
-      'react/function-component-definition': [
-        'error',
-        {
-          namedComponents: 'arrow-function',
-          unnamedComponents: 'arrow-function',
-        },
-      ],
+      'react/function-component-definition': ['off'],
 
       // React Hooks rules
       'react-hooks/rules-of-hooks': 'error',
