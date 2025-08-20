@@ -1,5 +1,12 @@
 # Change Log
 
+## 3.0.0-canary.6
+
+### Patch Changes
+
+- Updated dependencies
+  - @yoo-digital/eslint-config-base@3.0.0-canary.6
+
 ## 3.0.0-canary.5
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.0-canary.6
+
+### Patch Changes
+
+- Revert to using tseslint recommended
+
 ## 3.0.0-canary.5
 
 ### Patch Changes

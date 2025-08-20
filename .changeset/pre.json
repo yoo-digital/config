@@ -10,6 +10,7 @@
     "@yoo-digital/prettier": "1.2.1"
   },
   "changesets": [
+    "fruity-planets-scream",
     "large-ghosts-open",
     "solid-dingos-prove",
     "some-bugs-notice",
