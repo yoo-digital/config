@@ -1,5 +1,17 @@
 # Change Log
 
+## 3.0.0-canary.7
+
+### Patch Changes
+
+- adapt import/resolver and set import/export to warn
+
+## 3.0.0-canary.6
+
+### Patch Changes
+
+- Revert to using tseslint recommended
+
 ## 3.0.0-canary.5
 
 ### Patch Changes

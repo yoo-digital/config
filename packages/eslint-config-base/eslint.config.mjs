@@ -9,7 +9,7 @@ export default tseslint.config(
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
-      tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.recommended,
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
     ],
@@ -22,9 +22,11 @@ export default tseslint.config(
     settings: {
       'import/resolver': {
         node: {
-          extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx'],
+          extensions: ['.js', '.jsx', '.mjs'],
         },
-        typescript: {},
+        typescript: {
+          extensions: ['.ts', '.tsx'],
+        },
       },
     },
   },
@@ -99,7 +101,6 @@ export default tseslint.config(
           },
         },
       ],
-
       // Import rules
       'import/no-extraneous-dependencies': [
         'error',
@@ -113,7 +114,7 @@ export default tseslint.config(
           ],
         },
       ],
-
+      'import/export': 'warn',
       // Code quality rules
       'max-depth': ['warn', 3],
       'max-lines-per-function': [

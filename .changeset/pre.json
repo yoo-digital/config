@@ -10,6 +10,8 @@
     "@yoo-digital/prettier": "1.2.1"
   },
   "changesets": [
+    "curvy-cougars-marry",
+    "fruity-planets-scream",
     "large-ghosts-open",
     "solid-dingos-prove",
     "some-bugs-notice",
