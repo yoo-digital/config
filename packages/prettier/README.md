@@ -60,7 +60,7 @@ For a complete overview of configuration options please refer to the [official d
 
 Make sure to define a `.prettierignore` file at the root of your project, to ignore files to be formatted:
 
-```
+```txt
 .next
 assets
 build

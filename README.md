@@ -84,7 +84,7 @@ You can find the trigger in the [Actions tab](https://github.com/yoo-digital/con
 
 See [changesets snapshot releases](https://github.com/changesets/changesets/blob/c7b6832a7a2783073e720d2085a546810e9b55eb/docs/snapshot-releases.md)
 
-## Canary releases
+### Canary releases
 
 Canary releases can be done using the pre-release functionality of changesets.
 Due to how the Changesets CI action works, pre-releases should not be done on the `main` branch, but rather on a feature branch.
@@ -92,3 +92,9 @@ Due to how the Changesets CI action works, pre-releases should not be done on th
 Before merging your branch into the `main` branch, be sure to exit the pre-release mode by running the following command according to the docs.
 
 See [changesets pre-releases](https://github.com/changesets/changesets/blob/c7b6832a7a2783073e720d2085a546810e9b55eb/docs/prereleases.md)
+
+## Development
+
+This repository is a monorepo that makes use of NPM workspaces and Turbo for task orchestration.
+Apart from the eslint-configurations and prettier configuration, it also example repositories to test the configurations against.
+The packages to publish are located in the `packages` directory, while the example repositories are located in the `examples` directory.
