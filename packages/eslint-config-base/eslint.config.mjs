@@ -9,7 +9,7 @@ export default tseslint.config(
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
-      tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.recommended,
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
     ],
@@ -24,7 +24,9 @@ export default tseslint.config(
         node: {
           extensions: ['.js', '.jsx', '.mjs', '.ts', '.tsx'],
         },
-        typescript: {},
+        typescript: {
+          extensions: ['.ts', '.tsx'],
+        },
       },
     },
   },
