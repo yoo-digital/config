@@ -68,8 +68,8 @@
       "require": "./eslint.config.mjs"
     },
     "./legacy": {
-      "import": "./index.js",
-      "require": "./index.js"
+      "import": "./legacy.js",
+      "require": "./legacy.js"
     }
   },
   "files": [
