@@ -1,6 +1,6 @@
 # YOO ESLint Configuration for React Projects
 
-[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-react.svg)](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-react)
+[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-react.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-react)
 
 Contains the settings and rules used for React projects based on TypeScript within YOO.
 It is publicly available via the npm registry.

@@ -1,6 +1,6 @@
 # YOO ESLint Configuration for Angular Projects
 
-[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular)
+[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-angular)
 
 Contains the settings and rules used for Angular projects based on TypeScript within YOO. It is publicly available via the npm registry.
 

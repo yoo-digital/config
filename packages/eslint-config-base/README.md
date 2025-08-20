@@ -1,6 +1,6 @@
 # YOO ESLint Configuration for TypeScript Projects
 
-[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-base.svg)](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-base)
+[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-base.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-base)
 
 Contains the settings and rules used for TypeScript projects within YOO.
 It is publicly available via the npm registry.

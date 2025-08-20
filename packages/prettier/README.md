@@ -2,6 +2,8 @@
 
 _This repo contains a reusable prettier configuration for projects @ YOO._
 
+[![npm version](https://badge.fury.io/js/%40yoo-digital%2Fprettier.svg)](https://www.npmjs.com/package/@yoo-digital/prettier)
+
 ## Introduction
 
 The published package can be found in our npm organization [here (@yoo-digital)](https://www.npmjs.com/org/yoo-digital).

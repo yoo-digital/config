@@ -4,12 +4,12 @@ _This repo contains eslint-configurations as well as a reusable prettier configu
 
 ## Content
 
-| Package                                                           | Description                                  |
-| ----------------------------------------------------------------- | -------------------------------------------- |
-| [eslint-config-base](packages/eslint-config-base/README.md)       | Base ESLint configuration for all projects   |
-| [eslint-config-angular](packages/eslint-config-angular/README.md) | ESLint configuration for Angular projects    |
-| [eslint-config-react](packages/eslint-config-react/README.md)     | ESLint configuration for React projects      |
-| [prettier](packages/prettier/README.md)                           | Reusable Prettier configuration for projects |
+| Package                                                           | NPM                                                                                                                                                     | Description                                  |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [eslint-config-base](packages/eslint-config-base/README.md)       | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-base.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-base)       | Base ESLint configuration for all projects   |
+| [eslint-config-react](packages/eslint-config-react/README.md)     | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-react.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-react)     | ESLint configuration for React projects      |
+| [eslint-config-angular](packages/eslint-config-angular/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-angular) | ESLint configuration for Angular projects    |
+| [prettier](packages/prettier/README.md)                           | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fprettier.svg)](https://www.npmjs.com/package/@yoo-digital/prettier)                           | Reusable Prettier configuration for projects |
 
 ## Introduction
 
