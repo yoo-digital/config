@@ -23,7 +23,10 @@
         "build"
       ]
     },
-    "lint": {}
+    "lint": {},
+    "format": {
+      "cache": false
+    }
   },
   "globalDependencies": [
     "tsconfig.json"

@@ -68,6 +68,7 @@
     "build": "turbo run build --parallel",
     "start": "turbo run start --parallel",
     "lint": "turbo run lint --parallel",
+    "format": "turbo run format --parallel",
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
