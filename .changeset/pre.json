@@ -7,11 +7,13 @@
     "@yoo-digital/eslint-config-angular": "18.0.0",
     "@yoo-digital/eslint-config-base": "3.0.0-canary.0",
     "@yoo-digital/eslint-config-react": "3.0.0-canary.0",
-    "@yoo-digital/prettier": "1.2.1"
+    "@yoo-digital/prettier": "1.2.1",
+    "@yoo-digital/example-angular-app": "0.0.0"
   },
   "changesets": [
     "curvy-cougars-marry",
     "fruity-planets-scream",
+    "huge-brooms-fall",
     "large-ghosts-open",
     "solid-dingos-prove",
     "some-bugs-notice",

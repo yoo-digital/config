@@ -39,7 +39,7 @@
     "@angular/cli": "^20.1.6",
     "@angular/compiler-cli": "^20.1.0",
     "@types/jasmine": "~5.1.0",
-    "@yoo-digital/eslint-config-angular": "18.0.0",
+    "@yoo-digital/eslint-config-angular": "19.0.0-canary.0",
     "@yoo-digital/prettier": "1.2.1",
     "angular-eslint": "18.4.3",
     "eslint": "^9.15.0",
