@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-angular",
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
-  "version": "19.0.0-canary.0",
+  "version": "20.0.0-canary.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
