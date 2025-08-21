@@ -5,7 +5,6 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   eslint.configs.recommended,
-  // importPlugin.flatConfigs.recommended,
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
