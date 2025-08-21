@@ -47,11 +47,9 @@ Check the chapter below, for a complete set of rules that can be applied.
 
 ## Development
 
+**Important**: This configuration should only share the base ESLint configuration for TypeScript projects.
+It should not contain any rules that are specific to Angular or React.
+
 Before creating a pull request or publishing changes, make sure you tested your changes.
-You can use `yarn link` to link your work in progress into an actual project and test your changes.
-Make sure you are in the directory of the package (_./packages/eslint-config-base_) before linking.
-See the [official documentation](https://yarnpkg.com/lang/en/docs/cli/link/) of yarn for more information.
-
-If you want to extend or change the set of rules, you can find all rules in the following list.
-
-- [TypeScript ESLint Plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules)
+Within this mono-repository you will find an example Angular application in the `examples/angular-app` directory.
+Run `npm run lint` in that directory to test your changes.

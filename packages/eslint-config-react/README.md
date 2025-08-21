@@ -44,15 +44,8 @@ Check the chapter below, for a complete set of rules that can be applied.
 
 ## Development
 
-**Important**: This file should only contain rules concerning React and JSX.
+**Important**: This configuration should only contain rules concerning React.js.
 
 Before creating a pull request or publishing changes, make sure you tested your changes.
-You can use `yarn link` to link your work in progress into an actual project and test your changes.
-Make sure you are in the directory of the package (_./packages/eslint-config-react_) before linking.
-You might also have to link the package _./packages/eslint-config-base_ if you made changes to the base.
-See the [official documentation](https://yarnpkg.com/lang/en/docs/cli/link/) of yarn for more information.
-
-If you want to extend or change the set of rules, you can find all rules in the following list.
-
-- [YOO Base ESLint config](https://www.npmjs.com/package/@yoo-digital/eslint-config-base)
-- [TypeScript ESLint Plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules)
+Within this mono-repository you will find an example React application in the `examples/react-app` directory and a Next.js application in the `examples/nextjs-app` directory.
+Run `npm run lint` in these directories to test your changes.
