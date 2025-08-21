@@ -1,0 +1,32 @@
+name: PR Validation
+
+on:
+  pull_request:
+    branches:
+      - main
+      - 'release/*'
+    types: [opened, synchronize, reopened]
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  lint:
+    name: Create Snapshot Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with:
+          # This ensures we get the full git history for changesets
+          fetch-depth: 0
+
+      - name: Setup Node.js 24.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 24.x
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Linting
+        run: npm run lint
