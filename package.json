@@ -75,6 +75,7 @@
     "changeset:status": "changeset status"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.5",
     "@yoo-digital/prettier": "*",
     "turbo": "^2.5.4"
