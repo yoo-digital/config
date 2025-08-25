@@ -1,10 +1,7 @@
 // @ts-check
-import { fixupPluginRules } from '@eslint/compat';
 import eslint from '@eslint/js';
 import angular from 'angular-eslint';
 import eslintImport from 'eslint-plugin-import';
-import rxjsPlugin from 'eslint-plugin-rxjs';
-import rxjsAngularPlugin from 'eslint-plugin-rxjs-angular';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
@@ -14,13 +11,10 @@ export default tseslint.config(
       eslint.configs.recommended,
       ...tseslint.configs.recommended,
       ...angular.configs.tsRecommended,
-      // ...fixupConfigRules(compat.extends('plugin:rxjs/recommended')),
     ],
     processor: angular.processInlineTemplates,
     plugins: {
       import: eslintImport,
-      rxjs: fixupPluginRules(rxjsPlugin),
-      'rxjs-angular': fixupPluginRules(rxjsAngularPlugin),
     },
     rules: {
       '@angular-eslint/component-selector': [
@@ -53,20 +47,6 @@ export default tseslint.config(
         'error',
         {
           allowAfterThis: true,
-        },
-      ],
-      'rxjs/finnish': 'warn',
-      'rxjs/no-ignored-observable': 'warn',
-      'rxjs/no-exposed-subjects': [
-        'warn',
-        {
-          allowProtected: true,
-        },
-      ],
-      'rxjs-angular/prefer-takeuntil': [
-        'error',
-        {
-          alias: ['takeUntilDestroyed'],
         },
       ],
     },

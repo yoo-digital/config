@@ -1,5 +1,11 @@
 # Change Log
 
+## 20.0.0-canary.2
+
+### Patch Changes
+
+- Removes outdated dependencies
+
 ## 20.0.0-canary.1
 
 ### Major Changes
