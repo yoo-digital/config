@@ -57,6 +57,7 @@ export default tseslint.config(
           fixStyle: 'inline-type-imports',
         },
       ],
+      '@typescript-eslint/no-empty-object-type': 'warn',
       'import/consistent-type-specifier-style': 'off',
 
       // Disable base rules that can report incorrect errors with TypeScript

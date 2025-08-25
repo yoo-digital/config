@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.0-canary.8
+
+### Patch Changes
+
+- Bump required eslint-plugin-jsx-a11y to v6.10 to ensure eslint v9 compatability
+
 ## 3.0.0-canary.7
 
 ### Patch Changes
