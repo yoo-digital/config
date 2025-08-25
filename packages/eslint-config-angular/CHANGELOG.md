@@ -1,5 +1,11 @@
 # Change Log
 
+## 20.0.0-canary.4
+
+### Patch Changes
+
+- Update import plugin config
+
 ## 20.0.0-canary.3
 
 ### Patch Changes

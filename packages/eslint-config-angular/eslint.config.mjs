@@ -9,12 +9,17 @@ export default tseslint.config(
     files: ['**/*.ts'],
     extends: [
       eslint.configs.recommended,
+      eslintImport.flatConfigs.recommended,
+      eslintImport.flatConfigs.typescript,
       ...tseslint.configs.recommended,
       ...angular.configs.tsRecommended,
     ],
     processor: angular.processInlineTemplates,
-    plugins: {
-      import: eslintImport,
+    settings: {
+      'import/resolver': {
+        typescript: true,
+        node: true,
+      },
     },
     rules: {
       '@angular-eslint/component-selector': [
@@ -58,6 +63,12 @@ export default tseslint.config(
       '@angular-eslint/template/no-interpolation-in-attributes': 'error',
       '@angular-eslint/template/no-duplicate-attributes': 'error',
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
+    },
+  },
+  {
+    files: ['index.html'],
+    rules: {
+      '@angular-eslint/template/prefer-self-closing-tags': 'off',
     },
   },
 );
