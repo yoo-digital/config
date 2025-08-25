@@ -1,5 +1,11 @@
 # Change Log
 
+## 20.0.0-canary.3
+
+### Patch Changes
+
+- Removes deprecated rules
+
 ## 20.0.0-canary.2
 
 ### Patch Changes

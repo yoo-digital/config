@@ -40,7 +40,6 @@ export default tseslint.config(
       '@angular-eslint/prefer-output-readonly': 'error',
       '@angular-eslint/relative-url-prefix': 'error',
       '@angular-eslint/use-injectable-provided-in': 'error',
-      '@angular-eslint/prefer-standalone-component': 'warn',
       'import/prefer-default-export': 'off',
       'class-methods-use-this': 'off',
       'no-underscore-dangle': [
