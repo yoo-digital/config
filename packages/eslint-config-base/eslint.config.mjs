@@ -8,7 +8,7 @@ export default tseslint.config(
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
-      tseslint.configs.recommended,
+      tseslint.configs.recommendedTypeChecked,
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
     ],
@@ -28,8 +28,6 @@ export default tseslint.config(
         },
       },
     },
-  },
-  {
     rules: {
       // TypeScript-specific rules
       '@typescript-eslint/no-unused-vars': [
@@ -127,7 +125,7 @@ export default tseslint.config(
       ],
       'no-await-in-loop': 'error',
       'no-useless-rename': 'error',
-    },
+    }
   },
   {
     files: ['.storybook/**', 'stories/**', '**/*.stories.*', '**/*.test.*', '**/*.spec.*'],

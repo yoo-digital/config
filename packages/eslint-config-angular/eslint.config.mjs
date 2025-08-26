@@ -1,26 +1,12 @@
 // @ts-check
-import eslint from '@eslint/js';
 import angular from 'angular-eslint';
-import eslintImport from 'eslint-plugin-import';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
     files: ['**/*.ts'],
-    extends: [
-      eslint.configs.recommended,
-      eslintImport.flatConfigs.recommended,
-      eslintImport.flatConfigs.typescript,
-      ...tseslint.configs.recommended,
-      ...angular.configs.tsRecommended,
-    ],
+    extends: [...angular.configs.tsRecommended],
     processor: angular.processInlineTemplates,
-    settings: {
-      'import/resolver': {
-        typescript: true,
-        node: true,
-      },
-    },
     rules: {
       '@angular-eslint/component-selector': [
         'error',

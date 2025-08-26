@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.0-canary.9
+
+### Patch Changes
+
+- Update typescript linting configuration
+
 ## 3.0.0-canary.8
 
 ### Patch Changes

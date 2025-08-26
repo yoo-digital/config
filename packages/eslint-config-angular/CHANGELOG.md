@@ -1,5 +1,11 @@
 # Change Log
 
+## 20.0.0-canary.5
+
+### Patch Changes
+
+- Update typescript linting configuration
+
 ## 20.0.0-canary.4
 
 ### Patch Changes
