@@ -1,5 +1,11 @@
 # Change Log
 
+## 20.0.0-canary.6
+
+### Patch Changes
+
+- Add missing dependency
+
 ## 20.0.0-canary.5
 
 ### Patch Changes
