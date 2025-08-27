@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.0-canary.10
+
+### Patch Changes
+
+- Fix rule name
+
 ## 3.0.0-canary.9
 
 ### Patch Changes

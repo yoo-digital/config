@@ -130,7 +130,7 @@ export default tseslint.config(
   {
     files: ['.storybook/**', 'stories/**', '**/*.stories.*', '**/*.test.*', '**/*.spec.*'],
     rules: {
-      'max-files-per-function': 'off',
+      'max-lines-per-function': 'off',
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
