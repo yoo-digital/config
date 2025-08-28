@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.0.0-canary.11
+
+### Patch Changes
+
+- Relax ESLint version requirements (fixed major version only)
+- Updated dependencies
+  - @yoo-digital/eslint-config-base@3.0.0-canary.11
+
 ## 3.0.0-canary.10
 
 ### Patch Changes
