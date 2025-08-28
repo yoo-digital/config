@@ -1,21 +1,16 @@
-import { FlatCompat } from '@eslint/eslintrc';
+// This export might not be available in older versions of Next.js
+import { flatConfig } from '@next/eslint-plugin-next';
 import yooEslintConfigReact from '@yoo-digital/eslint-config-react';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: yooEslintConfigReact,
-});
 
 const eslintConfig = [
   {
     ignores: ['node_modules/**', 'dist/**', 'build/**', '.next/**'],
   },
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  /* Next.js specific */
+  flatConfig.recommended,
+  /* YOO React ESLint config */
+  ...yooEslintConfigReact,
+  /* Custom rules or overrides can be added here */
 ];
 
 export default eslintConfig;

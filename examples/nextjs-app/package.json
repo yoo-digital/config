@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint -c eslint.config.mjs .",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -16,13 +16,13 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.3.5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@yoo-digital/eslint-config-react": "3.0.0-canary.12",
     "@yoo-digital/prettier": "1.2.1",
     "eslint": "^9",
-    "eslint-config-next": "15.3.5",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
   },

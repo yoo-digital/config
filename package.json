@@ -84,7 +84,7 @@
     "packages/*",
     "examples/*"
   ],
-  "packageManager": "npm@10.9.2",
+  "packageManager": "npm@11.3.0",
   "engines": {
     "node": "^24.0.0",
     "npm": "^10.9.2"

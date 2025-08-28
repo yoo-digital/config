@@ -43,6 +43,7 @@ const MainContent = (): React.JSX.Element => (
         Read our docs
       </a>
     </div>
+    <a href="/">Next.js ESLint Plugin should warn at the href attribute</a>
   </main>
 );
 
