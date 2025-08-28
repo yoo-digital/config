@@ -1,5 +1,17 @@
 # Change Log
 
+## 3.0.0-canary.12
+
+### Patch Changes
+
+- feat: use tseslint.configs.recommended instead of tseslint.configs.recommendedTypeChecked
+
+## 3.0.0-canary.11
+
+### Patch Changes
+
+- Relax ESLint version requirements (fixed major version only)
+
 ## 3.0.0-canary.10
 
 ### Patch Changes

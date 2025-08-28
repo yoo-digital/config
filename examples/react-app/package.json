@@ -18,7 +18,7 @@
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.6.0",
-    "@yoo-digital/eslint-config-react": "3.0.0-canary.10",
+    "@yoo-digital/eslint-config-react": "3.0.0-canary.12",
     "@yoo-digital/prettier": "1.2.1",
     "eslint": "^9",
     "eslint-plugin-react-hooks": "^5.2.0",

@@ -8,7 +8,7 @@ export default tseslint.config(
   {
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
-      tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.recommended,
       importPlugin.flatConfigs.recommended,
       importPlugin.flatConfigs.typescript,
     ],
@@ -125,7 +125,7 @@ export default tseslint.config(
       ],
       'no-await-in-loop': 'error',
       'no-useless-rename': 'error',
-    }
+    },
   },
   {
     files: ['.storybook/**', 'stories/**', '**/*.stories.*', '**/*.test.*', '**/*.spec.*'],
