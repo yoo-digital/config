@@ -19,7 +19,7 @@
     "@types/react-dom": "^19.1.6",
     "@typescript-eslint/parser": "^8.41.0",
     "@vitejs/plugin-react": "^4.6.0",
-    "@yoo-digital/eslint-config-react": "3.0.0-canary.12",
+    "@yoo-digital/eslint-config-react": "3.0.0-canary.13",
     "@yoo-digital/prettier": "1.2.1",
     "eslint": "^9",
     "eslint-import-resolver-typescript": "^4.4.4",

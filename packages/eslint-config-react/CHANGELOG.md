@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.0.0-canary.13
+
+### Patch Changes
+
+- feat: add missing peer-dependency @typescript-eslint/parser
+- Updated dependencies
+  - @yoo-digital/eslint-config-base@3.0.0-canary.13
+
 ## 3.0.0-canary.12
 
 ### Patch Changes
