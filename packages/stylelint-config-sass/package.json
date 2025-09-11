@@ -1,20 +1,20 @@
 {
-  "name": "@yoo-digital/config",
-  "description": "YOO configuration mono repository containing reusable configurations for web projects.",
-  "version": "0.0.1",
-  "private": true,
+  "name": "@yoo-digital/stylelint-config-sass",
+  "description": "Stylelint configuration file containing rules for Sass projects",
+  "version": "3.0.2",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
-    "YOO",
-    "Mono Repository",
-    "Configuration",
-    "Prettier",
-    "ESLint",
-    "TypeScript"
+    "Sass",
+    "stylelint",
+    "stylelint-config"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:yoo-digital/config.git"
+    "url": "git@github.com:yoo-digital/css.git",
+    "directory": "packages/stylelint-config-sass"
   },
   "author": {
     "name": "YOO AG",
@@ -55,10 +55,6 @@
       "email": "sacha.schmid@yoo.digital"
     },
     {
-      "name": "Tobias Maier",
-      "email": "tobias.maier@yoo.digital"
-    },
-    {
       "name": "Tobias Wahl",
       "email": "tobias.wahl@yoo.digital"
     },
@@ -67,32 +63,29 @@
       "email": "yanick.recher@yoo.digital"
     }
   ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
-    "dev": "turbo run dev --parallel",
-    "build": "turbo run build --parallel",
-    "start": "turbo run start --parallel",
-    "lint": "turbo run lint --parallel",
-    "format": "turbo run format --parallel",
-    "changeset": "changeset",
-    "changeset:version": "changeset version",
-    "changeset:publish": "changeset publish",
-    "changeset:status": "changeset status"
+    "lint": "stylelint \"__test__/**/*.scss\""
+  },
+  "engines": {
+    "node": ">= 18",
+    "npm": ">= 8"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-order": "^6.0.4"
+  },
+  "peerDependencies": {
+    "stylelint": "^16.2.1"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.5",
-    "@typescript-eslint/parser": "^8.41.0",
-    "@yoo-digital/prettier": "*",
-    "turbo": "^2.5.4"
-  },
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
-  "packageManager": "npm@11.3.0",
-  "engines": {
-    "node": "^24.0.0",
-    "npm": "^11.3.0"
+    "@yoo-digital/prettier": "1.2.1",
+    "stylelint": "^16.2.1"
   },
   "prettier": "@yoo-digital/prettier"
 }
