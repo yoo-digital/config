@@ -13,23 +13,7 @@
     "@yoo-digital/example-react-app": "0.0.0"
   },
   "changesets": [
-    "curvy-cougars-marry",
-    "dark-stars-follow",
-    "every-rockets-send",
-    "fruity-planets-scream",
     "huge-brooms-fall",
-    "large-ghosts-open",
-    "little-cars-wait",
-    "modern-berries-pay",
-    "seven-showers-smell",
-    "solid-dingos-prove",
-    "some-bugs-notice",
-    "spicy-houses-pay",
-    "spotty-bikes-sip",
-    "tame-plums-warn",
-    "thirty-jokes-float",
-    "tiny-spies-doubt",
-    "tired-turtles-joke",
-    "wide-points-matter"
+    "tame-plums-warn"
   ]
 }
