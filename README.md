@@ -1,11 +1,12 @@
 # YOO Config Monorepo
 
-_This repo contains eslint-configurations as well as a reusable prettier configuration for projects @ YOO._
+_This repo contains eslint-configurations, a reusable prettier configuration and a styleling configuration for SCSS to use in projects @ YOO._
 
 ## Content
 
 | Package                                                           | NPM                                                                                                                                                     | Description                                  |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [stylelint-config-sass](packages/stylelint-config-sass/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fstylelint-config-sass.svg)](https://www.npmjs.com/package/@yoo-digital/stylelint-config-sass) | Stylelint configuration for SASS projects    |
 | [eslint-config-base](packages/eslint-config-base/README.md)       | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-base.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-base)       | Base ESLint configuration for all projects   |
 | [eslint-config-react](packages/eslint-config-react/README.md)     | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-react.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-react)     | ESLint configuration for React projects      |
 | [eslint-config-angular](packages/eslint-config-angular/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-angular) | ESLint configuration for Angular projects    |

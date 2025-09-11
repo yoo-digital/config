@@ -1,0 +1,15 @@
+// YOO Sassquatch Global Styles
+// It is important to note that all of the imported partials will be part of a global stylesheet.
+// It is applied to the entire application/website.
+
+// Base
+@import "base/base";
+@import "base/typography";
+
+// Utilities
+@import "utilities/colors";
+@import "utilities/text";
+
+// Layout
+
+// Global components

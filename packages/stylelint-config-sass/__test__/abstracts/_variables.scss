@@ -1,0 +1,181 @@
+@use "sass:color";
+
+// ==========================================
+// General Settings
+// ==========================================
+
+// Paths
+// Static path: The directory your static files/assets reside:
+$static-directory-path: "../assets" !default;
+$fonts-path: "#{$static-directory-path}/fonts" !default;
+
+// ==========================================
+// Colors
+// ==========================================
+// General
+$white: #ffffff !default;
+$black: #000000 !default;
+
+// Branding colors
+$primary: null !default;
+$primary-contrast: null !default;
+$secondary: null !default;
+$secondary-contrast: null !default;
+$dark: null !default;
+$dark-contrast: null !default;
+$light: null !default;
+$light-contrast: null !default;
+
+// Functional colors such as info, warning, error...
+
+// A map containing all colors
+$color-map: (
+  // General colors
+  "black": $black,
+  "white": $white,
+  // Branding colors
+  "primary": $primary,
+  "secondary": $secondary,
+  "dark": $dark,
+  "light": $light,
+  // Functional colors
+) !default;
+
+// A map containing the variations of a specific theme
+$theme-colors: (
+  "primary": (
+    "base": $primary,
+    "contrast": $primary-contrast,
+  ),
+  "secondary": (
+    "base": $secondary,
+    "contrast": $secondary-contrast,
+  ),
+  "dark": (
+    "base": $dark,
+    "contrast": $dark-contrast,
+  ),
+  "light": (
+    "base": $light,
+    "contrast": $light-contrast,
+  ),
+) !default;
+
+// Applied colors
+$body-color: $dark !default;
+$headings-color: null !default;
+
+$link-color: $primary !default;
+$link-color-hover: color.lighten($primary, 20%) !default;
+
+// ==========================================
+// Fonts / Typography
+// ==========================================
+
+// Family
+$font-family-base: null !default;
+$font-family-headings: $font-family-base !default;
+
+// Size
+$font-size-base: 1rem !default;
+$font-size-sm: $font-size-base * 0.8 !default;
+$font-size-lg: $font-size-base * 1.125 !default;
+$font-size-xl: $font-size-base * 1.25 !default;
+
+$font-size-map: (
+  "sm": $font-size-sm,
+  "base": $font-size-base,
+  "lg": $font-size-lg,
+  "xl": $font-size-xl,
+) !default;
+
+// Major Third Scale (1.25): https://type-scale.com/
+$h1-font-size: $font-size-base * 3.052 !default;
+$h2-font-size: $font-size-base * 2.441 !default;
+$h3-font-size: $font-size-base * 1.953 !default;
+$h4-font-size: $font-size-base * 1.563 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+
+// Weights
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+
+$font-weight-base: $font-weight-normal !default;
+
+$h1-font-weight: $font-weight-bold !default;
+$h2-font-weight: $font-weight-bold !default;
+$h3-font-weight: $font-weight-bold !default;
+$h4-font-weight: $font-weight-semi-bold !default;
+$h5-font-weight: $font-weight-semi-bold !default;
+
+// Line Height
+$line-height-base: 1.5 !default;
+
+$h1-line-height: $line-height-base !default;
+$h2-line-height: $line-height-base !default;
+$h3-line-height: $line-height-base !default;
+$h4-line-height: $line-height-base !default;
+$h5-line-height: $line-height-base !default;
+
+// Decoration
+$link-decoration: null !default;
+$link-decoration-hover: null !default;
+
+// ==========================================
+// Spacing
+// ==========================================
+// General spacing relative to line-height
+$spacing: ($line-height-base * 1rem) !default;
+
+// Typography spacing
+$headings-margin-top: 0 !default;
+$headings-margin-bottom: $spacing * 1.5 !default;
+
+$paragraph-margin-top: 0 !default;
+$paragraph-margin-bottom: $spacing * 0.5 !default;
+
+$h1-margin-top: $headings-margin-top !default;
+$h2-margin-top: $headings-margin-top !default;
+$h3-margin-top: $headings-margin-top !default;
+$h4-margin-top: $headings-margin-top !default;
+$h5-margin-top: $headings-margin-top !default;
+
+$h1-margin-bottom: $headings-margin-bottom !default;
+$h2-margin-bottom: $headings-margin-bottom !default;
+$h3-margin-bottom: $headings-margin-bottom !default;
+$h4-margin-bottom: $headings-margin-bottom !default;
+$h5-margin-bottom: $headings-margin-bottom !default;
+
+// ==========================================
+// Layout Settings
+// ==========================================
+
+// Breakpoints
+// Inspired by: https://material.io/design/layout/responsive-layout-grid.html#breakpoints
+$breakpoint-sm: 600px !default;
+$breakpoint-md: 1024px !default;
+$breakpoint-lg: 1280px !default;
+$breakpoint-xl: 1440px !default;
+$breakpoint-xxl: 1920px !default;
+
+$breakpoints: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+  xxl: $breakpoint-xxl,
+) !default;
+
+// Borders
+$border-radius-round: 999px !default;
+
+// Box Shadow
+
+$z-index-sticky: 1000 !default;
+
+// Z-Index
+$z-indexes: (
+  sticky: $z-index-sticky,
+) !default;
