@@ -20,7 +20,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@yoo-digital/eslint-config-react": "3.0.0-canary.13",
+    "@yoo-digital/eslint-config-react": "3.0.0",
     "@yoo-digital/prettier": "1.2.1",
     "eslint": "^9",
     "prettier": "^3.6.2",

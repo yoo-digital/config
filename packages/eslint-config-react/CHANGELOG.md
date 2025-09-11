@@ -1,5 +1,17 @@
 # Change Log
 
+## 3.0.0
+
+### Major Changes
+
+- b8b449f: This version provides all new eslint flat-config that is no longer based on the airbnb-eslint config.
+  Instead this configuration extends the eslint/js and ts-eslint recommended rules while the custom rules of the previous configuration are retained.
+
+### Patch Changes
+
+- Updated dependencies [b8b449f]
+  - @yoo-digital/eslint-config-base@3.0.0
+
 ## [1.3.0](https://github.com/yoo-digital/typescript/compare/@yoo-digital/eslint-config-react@1.2.4-canary.0...@yoo-digital/eslint-config-react@1.3.0) (2024-01-22)
 
 ### Features
