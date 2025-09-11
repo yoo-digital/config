@@ -1,0 +1,14 @@
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+// Creates utility classes for every color in the colors map
+// Usage: color-bis-red, color-grey-4, bg-bis-red, ...
+@each $key, $value in $color-map {
+  .color-#{$key} {
+    color: color($key);
+  }
+
+  .bg-#{$key} {
+    background-color: color($key);
+  }
+}

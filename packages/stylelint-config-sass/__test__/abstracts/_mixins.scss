@@ -1,0 +1,173 @@
+@use "sass:map";
+@import "variables";
+
+// A mixin that allows you to set "box-sizing: border-box" as a global default.
+// It is provided as a mixin so you can decide if it should be set or not.
+// Not every library or framework is compatible with this setting.
+@mixin global-border-box() {
+  html {
+    box-sizing: border-box;
+  }
+
+  // stylelint-disable-next-line
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+}
+
+// Helper that defines border-box as the box-sizing strategy
+// for the element and its pseudo-elements.
+// Useful if it has to be explicitly set on elements or components.
+@mixin border-box() {
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+// Positions the element fixed and adjusts the top offset
+// This mixin will not work for IE 11, as it does not support "position: sticky":
+// https://caniuse.com/#search=sticky
+@mixin sticky($top: 0, $z-index: $z-index-sticky) {
+  z-index: $z-index;
+  position: sticky;
+  top: $top;
+  left: 0;
+}
+
+// Applies a modifier for every font-size unit available in the provided map.
+@mixin font-size-modifier($map: $font-size-map) {
+  @each $key, $value in $map {
+    &--#{$key} {
+      font-size: map.get($map, $key);
+    }
+  }
+}
+
+// This mixin allows to clip text which the element contains,
+// by providing the number of lines and the line height.
+// This will work for Edge, Firefox (latest) and Chrome.
+// It won't clip in IE 11.
+// stylelint-disable value-no-vendor-prefix, property-no-vendor-prefix
+@mixin max-lines($number-of-lines, $line-height: $line-height-base) {
+  display: -webkit-box;
+  overflow: hidden;
+  line-height: $line-height;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $number-of-lines;
+  -webkit-box-orient: vertical;
+}
+// stylelint-enable value-no-vendor-prefix, property-no-vendor-prefix
+
+// The breakpoint function is a private utility function that is not intended
+// for external usage. It takes a breakpoint name, checks if it is defined,
+// and returns either the breakpoint value or a warning.
+// stylelint-disable-next-line
+@function _breakpoint($breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
+    @return map.get($breakpoints, $breakpoint);
+  } @else {
+    @warn "No breakpoint called "#{$breakpoint}" was found. Possible values include: #{map-keys($breakpoints)}";
+    @return null;
+  }
+}
+
+// The at-least mixin acts as a min-width media query for the given breakpoint.
+@mixin at-least($breakpoint) {
+  $width: _breakpoint($breakpoint);
+
+  @if $width {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+// The up-to mixin acts as a max-width media query for the given breakpoint.
+// 1px is subtracted from the breakpoint in order to ensure that the styles
+// are not applied, starting from the breakpoint.
+// The breakpoints have to be defined in px. calc(em - 1px) unfortunately does
+// not work in Edge:
+// https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/15515851/
+@mixin up-to($breakpoint) {
+  $width: _breakpoint($breakpoint) - 1px;
+
+  @if $width {
+    @media (max-width: $width) {
+      @content;
+    }
+  }
+}
+
+// Define max-widths for different breakpoints. The parameter is expected to be
+// a map with the format ([breakpoint]: [width]). Breakpoints must be defined in
+// the global breakpoints map.
+@mixin max-widths($widths) {
+  @each $breakpoint, $width in $widths {
+    @include at-least($breakpoint) {
+      max-width: $width;
+    }
+  }
+}
+
+// Used for elements which should not be immediately displayed to any user.
+// These elements are hidden both visually and semantically.
+@mixin a11y-hidden {
+  display: none;
+}
+
+// Used for information required for screen-reader users to understand and use
+// the site where visual display is undesirable. Information provided in this
+// manner should be kept concise, to avoid unnecessary burden on the user.
+@mixin a11y-visually-hidden {
+  // stylelint-disable-next-line
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  word-wrap: normal;
+}
+
+// Hide visually and from screen-readers, but maintain layout.
+@mixin a11y-invisible {
+  visibility: hidden;
+}
+
+// Used to customize the native scrollbars.
+// This mixin is supported by all major browsers.
+// To support the Internet Explorer properly you will have to use an additional library, such as simplebar-react.
+// macOS note: The auto-hiding semi-transparent scrollbars that are the macOS default cannot
+// be colored with this rule (it still chooses their own contrasting color based on the background).
+// Only the permanently showing scrollbars (System Preferences > Show Scroll Bars > Always) are colored.
+@mixin scrollbar($thumb-color: #1a1a1a, $track-color: #cccccc, $size: 8px, $border-radius: 20px) {
+  overflow: auto;
+
+  // Firefox
+  scrollbar-color: $thumb-color $track-color;
+  scrollbar-width: thin;
+
+  // IE
+  scrollbar-face-color: $thumb-color;
+  scrollbar-track-color: $track-color;
+
+  // Google Chrome / Safari
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: $border-radius;
+    background-color: $track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: $border-radius;
+    background-color: $thumb-color;
+  }
+}

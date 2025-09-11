@@ -1,0 +1,79 @@
+@import "../abstracts/variables";
+
+body {
+  color: $body-color;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
+}
+
+h1,
+.h1 {
+  margin-top: $h1-margin-top;
+  margin-bottom: $h1-margin-bottom;
+  font-size: $h1-font-size;
+  font-weight: $h1-font-weight;
+  line-height: $h1-line-height;
+}
+
+h2,
+.h2 {
+  margin-top: $h2-margin-top;
+  margin-bottom: $h2-margin-bottom;
+  font-size: $h2-font-size;
+  font-weight: $h2-font-weight;
+  line-height: $h2-line-height;
+}
+
+h3,
+.h3 {
+  margin-top: $h3-margin-top;
+  margin-bottom: $h3-margin-bottom;
+  font-size: $h3-font-size;
+  font-weight: $h3-font-weight;
+  line-height: $h3-line-height;
+}
+
+h4,
+.h4 {
+  margin-top: $h4-margin-top;
+  margin-bottom: $h4-margin-bottom;
+  font-size: $h4-font-size;
+  font-weight: $h4-font-weight;
+  line-height: $h4-line-height;
+}
+
+h5,
+.h5 {
+  margin-top: $h5-margin-top;
+  margin-bottom: $h5-margin-bottom;
+  font-size: $h5-font-size;
+  font-weight: $h5-font-weight;
+  line-height: $h5-line-height;
+}
+
+p,
+.paragraph {
+  margin-top: $paragraph-margin-top;
+  margin-bottom: $paragraph-margin-bottom;
+}
+
+small {
+  font-size: $font-size-sm;
+}
+
+a {
+  color: $link-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: $link-decoration-hover;
+  }
+}
+
+b,
+strong {
+  font-weight: $font-weight-bold;
+}

@@ -1,0 +1,11 @@
+@use "sass:map";
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+// Creates utility classes for every available font-size
+// Usage: text-xl, text-sm, ...
+@each $key, $value in $font-size-map {
+  .text-#{$key} {
+    font-size: map.get($font-size-map, $key);
+  }
+}

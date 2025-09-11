@@ -1,0 +1,101 @@
+// stylelint-disable order/order
+@use "sass:map";
+@use "sass:string";
+@import "./variables";
+
+/// Picks the correct color code of a specific theme
+/// @access public
+/// @param {String} $key - theme name (by default primary)
+/// @param {String} $key - color variant of the theme (by default base)
+/// @return {String}
+/// @require $theme-colors
+@function theme-color($key: "primary", $variant: "base") {
+  $map: map.get($theme-colors, $key);
+
+  @return map.get($map, $variant);
+}
+
+/// Ensures consistent spacing by always using the same base.
+/// @access public
+/// @param {String} $multiplier - multiplies using the spacing
+/// @return {Number}
+/// @require $spacing-component
+@function spacing($multiplier, $base: $spacing) {
+  @return $base * $multiplier;
+}
+
+/// Get a color value from a name
+/// @access public
+/// @param {String} $color - color’s name
+/// @return {Number}
+/// @require $colors-map
+@function color($color) {
+  @return map.get($color-map, $color);
+}
+
+/// Slightly lighten a color
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return color.mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return color.mix(black, $color, $percentage);
+}
+
+/// Split a string on a given separator. The separator must be a non-null and
+/// non-empty string. The function runs recursively.
+/// @param {String} $string - string to split
+/// @param {String} $separator - string to seperate on
+/// @return {List}
+@function split($string, $separator) {
+  @if not $separator or $separator == "" {
+    @return $string;
+  }
+
+  $index: string.index($string, $separator);
+
+  @if not $index {
+    @return $string;
+  }
+
+  $lhs: string.slice($string, 1, $index - 1);
+  $rhs: string.slice($string, $index + 1);
+
+  @return split($lhs) split($rhs);
+}
+
+/// Returns a z-index from a list of indices. This function expects a layer
+/// name, with or without a modifier. Possible modifiers include above and
+/// below. Examples: 'above sticky', 'sticky', 'below sticky'
+/// @param {String} $layer - layer definition, including an optional modifier
+@function z($layer) {
+  $components: split($layer, " ");
+
+  @if not map.has-key($z-indexes, list.nth($components, list.length($components))) {
+    @warn "No z-index layer called "#{list.nth($components, 1)}" was found. Possible values include: #{map-keys($z-indexes)}";
+    @return null;
+  }
+
+  @if list.length($components) == 1 {
+    @return map.get($z-indexes, $components);
+  } @else if list.length($components) == 2 {
+    @if not(list.nth($components, 1) == "above" or list.nth($components, 1) == "below") {
+      @warn "Invalid layer modifier. Possible values include: "above", "below"";
+      @return null;
+    }
+
+    /* stylelint-disable-next-line scss/operator-no-newline-after */
+    @return map.get($z-indexes, list.nth($components, 2)) +
+      if(list.nth($components, 1) == "above", 1, -1);
+  }
+
+  @warn "Invalid layer definition. Use one of #{map-keys($z-indexes)}, along with the keywords above, below.";
+  @return null;
+}
