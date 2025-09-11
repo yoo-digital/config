@@ -1,0 +1,19 @@
+{
+  "mode": "exit",
+  "tag": "canary",
+  "initialVersions": {
+    "@yoo-digital/example-nextjs": "0.0.0",
+    "@yoo-digital/example-vite-react-ts": "0.0.0",
+    "@yoo-digital/eslint-config-angular": "18.0.0",
+    "@yoo-digital/eslint-config-base": "3.0.0-canary.0",
+    "@yoo-digital/eslint-config-react": "3.0.0-canary.0",
+    "@yoo-digital/prettier": "1.2.1",
+    "@yoo-digital/example-angular-app": "0.0.0",
+    "@yoo-digital/example-nextjs-app": "0.0.0",
+    "@yoo-digital/example-react-app": "0.0.0"
+  },
+  "changesets": [
+    "huge-brooms-fall",
+    "tame-plums-warn"
+  ]
+}

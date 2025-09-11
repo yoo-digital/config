@@ -5,9 +5,8 @@ module.exports = {
       extends: [
         'plugin:@angular-eslint/recommended',
         'plugin:@angular-eslint/template/process-inline-templates',
-        'plugin:rxjs/recommended',
       ],
-      plugins: ['@angular-eslint/eslint-plugin', 'rxjs', 'rxjs-angular'],
+      plugins: ['@angular-eslint/eslint-plugin'],
       rules: {
         '@angular-eslint/component-selector': [
           'error',
@@ -39,20 +38,6 @@ module.exports = {
           'error',
           {
             allowAfterThis: true,
-          },
-        ],
-        'rxjs/finnish': 'warn',
-        'rxjs/no-ignored-observable': 'warn',
-        'rxjs/no-exposed-subjects': [
-          'warn',
-          {
-            allowProtected: true,
-          },
-        ],
-        'rxjs-angular/prefer-takeuntil': [
-          'error',
-          {
-            alias: ['takeUntilDestroyed'],
           },
         ],
       },

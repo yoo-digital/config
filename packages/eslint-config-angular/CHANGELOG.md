@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [17.0.0](https://github.com/yoo-digital/typescript/compare/@yoo-digital/eslint-config-angular@17.0.0-canary.1...@yoo-digital/eslint-config-angular@17.0.0) (2024-01-22)
 
 **Note:** Version bump only for package @yoo-digital/eslint-config-angular

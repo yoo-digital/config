@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-base",
   "description": "ESLint configuration file containing rules for TypeScript projects",
-  "version": "3.0.0-canary.0",
+  "version": "3.0.0-canary.13",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -50,8 +50,8 @@
       "email": "sacha.schmid@yoo.digital"
     },
     {
-      "name": "Sébastien Closs",
-      "email": "sebastien.closs@yoo.digital"
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
     },
     {
       "name": "Tobias Wahl",
@@ -62,28 +62,39 @@
       "email": "yanick.recher@yoo.digital"
     }
   ],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./eslint.config.mjs",
+      "require": "./eslint.config.mjs"
+    },
+    "./legacy": {
+      "import": "./legacy.js",
+      "require": "./legacy.js"
+    }
+  },
   "files": [
     "LICENSE",
     "README.md",
-    "index.js",
+    "legacy.js",
+    "eslint.config.mjs",
     "tsconfig.json"
   ],
-  "scripts": {
-    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
-  },
-  "engines": {
-    "node": ">= 18",
-    "npm": ">= 9"
-  },
-  "dependencies": {
-    "eslint-config-airbnb-base": "^15.0.0"
+  "devDependencies": {
+    "@eslint/js": "^9.33.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint": "^9.33.0",
+    "eslint-import-resolver-typescript": "^4.4.0",
+    "eslint-plugin-import": "^2.32.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.40.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1"
+    "@eslint/js": "^9.33.0",
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint": "^9.0.0",
+    "eslint-import-resolver-typescript": "^4.4.0",
+    "eslint-plugin-import": "^2.32.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.40.0"
   }
 }

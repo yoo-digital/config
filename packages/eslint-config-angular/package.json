@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-angular",
   "description": "ESLint configuration file containing rules for Angular projects using TypeScript",
-  "version": "18.0.0",
+  "version": "20.0.0-canary.6",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -51,8 +51,8 @@
       "email": "sacha.schmid@yoo.digital"
     },
     {
-      "name": "Sébastien Closs",
-      "email": "sebastien.closs@yoo.digital"
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
     },
     {
       "name": "Tobias Wahl",
@@ -63,31 +63,51 @@
       "email": "yanick.recher@yoo.digital"
     }
   ],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./eslint.config.mjs",
+      "require": "./eslint.config.mjs"
+    },
+    "./legacy": {
+      "import": "./legacy.js",
+      "require": "./legacy.js"
+    }
+  },
   "files": [
     "LICENSE",
     "README.md",
-    "index.js",
+    "legacy.js",
+    "eslint.config.mjs",
     "tsconfig.json"
   ],
-  "scripts": {
-    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
-  },
-  "engines": {
-    "node": ">= 18",
-    "npm": ">= 9"
+  "devDependencies": {
+    "@angular-eslint/builder": "^19 || ^20",
+    "@angular-eslint/eslint-plugin": "^19 || ^20",
+    "@angular-eslint/eslint-plugin-template": "^19 || ^20",
+    "@angular-eslint/schematics": "^19 || ^20",
+    "@angular-eslint/template-parser": "^19 || ^20",
+    "@eslint/compat": "^1.3.2",
+    "@eslint/eslintrc": "^3.3.1",
+    "@typescript-eslint/parser": "^8.16.0",
+    "angular-eslint": "^20",
+    "eslint": "^9",
+    "eslint-plugin-import": "^2.32.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.16.0"
   },
   "peerDependencies": {
-    "@angular-eslint/builder": "^18.0.0",
-    "@angular-eslint/eslint-plugin": "^18.0.0",
-    "@angular-eslint/eslint-plugin-template": "^18.0.0",
-    "@angular-eslint/schematics": "^18.0.0",
-    "@angular-eslint/template-parser": "^18.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-rxjs": "^5.0.3",
-    "eslint-plugin-rxjs-angular": "^2.0.1"
+    "@angular-eslint/builder": "^20",
+    "@angular-eslint/eslint-plugin": "^20",
+    "@angular-eslint/eslint-plugin-template": "^20",
+    "@angular-eslint/schematics": "^20",
+    "@angular-eslint/template-parser": "^20",
+    "@eslint/compat": "^1.3.2",
+    "@eslint/eslintrc": "^3.3.1",
+    "@typescript-eslint/parser": "^8.16.0",
+    "angular-eslint": "^20",
+    "eslint": "^9",
+    "eslint-plugin-import": "^2.32.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.16.0"
   }
 }

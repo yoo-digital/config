@@ -51,8 +51,8 @@
       "email": "sacha.schmid@yoo.digital"
     },
     {
-      "name": "Sébastien Closs",
-      "email": "sebastien.closs@yoo.digital"
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
     },
     {
       "name": "Tobias Wahl",
@@ -64,22 +64,31 @@
     }
   ],
   "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build --parallel",
+    "start": "turbo run start --parallel",
+    "lint": "turbo run lint --parallel",
+    "format": "turbo run format --parallel",
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
     "changeset:status": "changeset status"
   },
   "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.29.5",
+    "@typescript-eslint/parser": "^8.41.0",
     "@yoo-digital/prettier": "*",
     "turbo": "^2.5.4"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "examples/*"
   ],
+  "packageManager": "npm@11.3.0",
   "engines": {
-    "node": "^22.0.0",
-    "npm": "^11.0.0"
+    "node": "^24.0.0",
+    "npm": "^10.9.2"
   },
   "prettier": "@yoo-digital/prettier"
 }

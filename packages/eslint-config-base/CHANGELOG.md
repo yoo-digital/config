@@ -1,8 +1,5 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
-
 ## [1.3.0](https://github.com/yoo-digital/typescript/compare/@yoo-digital/eslint-config-base@1.2.4-canary.0...@yoo-digital/eslint-config-base@1.3.0) (2024-01-22)
 
 ### Features

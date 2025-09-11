@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-react",
   "description": "ESLint configuration file containing rules for React projects using TypeScript",
-  "version": "3.0.0-canary.0",
+  "version": "3.0.0-canary.13",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -51,8 +51,8 @@
       "email": "sacha.schmid@yoo.digital"
     },
     {
-      "name": "Sébastien Closs",
-      "email": "sebastien.closs@yoo.digital"
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
     },
     {
       "name": "Tobias Wahl",
@@ -63,31 +63,42 @@
       "email": "yanick.recher@yoo.digital"
     }
   ],
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./eslint.config.mjs",
+      "require": "./eslint.config.mjs"
+    },
+    "./legacy": {
+      "import": "./legacy.js",
+      "require": "./legacy.js"
+    }
+  },
   "files": [
     "LICENSE",
     "README.md",
-    "index.js",
+    "legacy.js",
+    "eslint.config.mjs",
     "tsconfig.json"
   ],
-  "scripts": {
-    "lint": "eslint -c ./index.js --ext .ts,.tsx ./src"
-  },
-  "engines": {
-    "node": ">= 18",
-    "npm": ">= 9"
-  },
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "^3.0.0-canary.0",
-    "eslint-config-airbnb": "^19.0.4"
+    "@yoo-digital/eslint-config-base": "3.0.0-canary.13"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint": "^9.33.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.0.2",
-    "@typescript-eslint/parser": "^7.0.2",
-    "eslint": "^8.56.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0"
+    "@typescript-eslint/parser": "^8.40.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "typescript": "^5.6.0",
+    "typescript-eslint": "^8.40.0"
   }
 }

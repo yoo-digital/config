@@ -1,6 +1,6 @@
 # YOO ESLint Configuration for Angular Projects
 
-[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular)
+[![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-angular)
 
 Contains the settings and rules used for Angular projects based on TypeScript within YOO. It is publicly available via the npm registry.
 
@@ -23,32 +23,37 @@ npx install-peerdeps --dev @yoo-digital/eslint-config-base
 npx install-peerdeps --dev @yoo-digital/eslint-config-angular
 ```
 
-After installing the packages, you can create a `.eslintrc` file in the root of your project and add the following lines:
+After installing the packages, you can create a `eslint.config.mjs` file in the root of your project and add the following lines:
 
-```json
-{
-  "overrides": [
-    {
-      "files": ["*.ts"],
-      "extends": ["@yoo-digital/eslint-config-base", "@yoo-digital/eslint-config-angular"]
+```js
+// @ts-check
+import yooAngularEslintConfig from '@yoo-digital/eslint-config-angular';
+
+// Optional
+// import yooBaseEslintConfig from '@yoo-digital/eslint-config-base';
+
+export default [
+  // Optional
+  // ...yooBaseEslintConfig,
+  ...yooAngularEslintConfig,
+  {
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.json', './tsconfig.app.json', './tsconfig.spec.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
-    {
-      "files": ["*.html"],
-      "extends": ["@yoo-digital/eslint-config-angular"]
-    }
-  ]
-}
+  },
+  // your own rules
+];
 ```
 
 You can apply your own set of rules on top of that, but do not turn off any of the rules, except it is an obstacle and making your life harder. Check the chapter below, for a complete set of rules that can be applied.
 
 ## Development
 
-Before creating a pull request or publishing changes, make sure you tested your changes. You can use `yarn link` to link your work in progress into an actual project and test your changes. Make sure you are in the directory of the package (_./packages/eslint-config-angular_) before linking. You might also have to link the package _./packages/eslint-config-base_ if you made changes to the base. See the [official documentation](https://yarnpkg.com/lang/en/docs/cli/link/) of yarn for more information.
+**Important**: This configuration should only contain the Angular specific ESLint configuration.
 
-If you want to extend or change the set of rules, you can find all rules in the following list. We follow the Airbnb styleguide as a reference and applied our own set of rules regarding TypeScript:
-
-- [YOO ESLint Base Rules](https://www.npmjs.com/package/@yoo-digital/eslint-config-base)
-- [TypeScript ESLint Plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin#supported-rules)
-- [Airbnb Rules](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
-- [Airbnb JS Styleguide](https://github.com/airbnb/javascript)
+Before creating a pull request or publishing changes, make sure you tested your changes.
+Within this mono-repository you will find an example Angular application in the `examples/angular-app` directory.
+Run `npm run lint` in that directory to test your changes.
