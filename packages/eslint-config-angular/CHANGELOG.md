@@ -1,5 +1,12 @@
 # Change Log
 
+## 21.0.0
+
+### Major Changes
+
+- 3de46fd: \* Add compatibility with version 21
+  - Enable additional linting rules
+
 ## 20.0.0
 
 ### Major Changes
