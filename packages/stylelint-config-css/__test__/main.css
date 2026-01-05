@@ -1,0 +1,50 @@
+@import url("foo.css");
+@import url("bar.css");
+
+@custom-media --foo (min-width: 30em);
+
+/**
+ * Multi-line comment
+ */
+
+:root {
+  --brand-red: hsl(5deg 10% 40%);
+}
+
+/* Single-line comment */
+
+.class-foo:not(a, div) {
+  margin: 0;
+  top: calc(100% - 2rem);
+}
+
+/* Flush single line comment */
+@media (width >= 60em) {
+  .id-bar {
+    /* Flush to parent comment */
+    --offset: 0px;
+
+    color: #ffffff;
+    font-family: Helvetica, "Arial Black", sans-serif;
+    left: calc(var(--offset) + 50%);
+  }
+
+  @layer layer-foo.layer-bar {
+    a::after {
+      display: block;
+      content: "→";
+      background-image: url("x.svg");
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  /* Flush nested single line comment */
+  to {
+    opacity: 1;
+  }
+}

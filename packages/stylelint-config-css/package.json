@@ -1,20 +1,20 @@
 {
-  "name": "@yoo-digital/stylelint-config-sass",
-  "description": "Stylelint configuration file containing rules for Sass projects",
-  "version": "3.0.3",
+  "name": "@yoo-digital/stylelint-config-css",
+  "description": "Stylelint configuration file containing rules for CSS projects",
+  "version": "1.0.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "keywords": [
-    "Sass",
+    "CSS",
     "stylelint",
     "stylelint-config"
   ],
   "repository": {
     "type": "git",
     "url": "git@github.com:yoo-digital/config.git",
-    "directory": "packages/stylelint-config-sass"
+    "directory": "packages/stylelint-config-css"
   },
   "author": {
     "name": "YOO AG",
@@ -70,22 +70,22 @@
     "README.md"
   ],
   "scripts": {
-    "lint": "stylelint \"__test__/**/*.scss\""
+    "lint": "stylelint \"__test__/**/*.css\""
   },
   "engines": {
     "node": ">= 18",
     "npm": ">= 8"
   },
   "dependencies": {
-    "stylelint-config-standard-scss": "^13.0.0",
-    "stylelint-order": "^6.0.4"
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-order": "^7.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^16.2.1"
+    "stylelint": "^16"
   },
   "devDependencies": {
-    "@yoo-digital/prettier": "1.2.1",
-    "stylelint": "^16.2.1"
+    "@yoo-digital/prettier": "~1.2.1",
+    "stylelint": "^16"
   },
   "prettier": "@yoo-digital/prettier"
 }
