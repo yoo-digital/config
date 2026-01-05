@@ -1,8 +1,8 @@
-# YOO Stylelint Configuration for Sass Projects
+# YOO Stylelint Configuration for CSS Projects
 
-[![npm version](https://badge.fury.io/js/%40yoo-digital%2Fstylelint-config-sass.svg)](https://www.npmjs.com/package/@yoo-digital/stylelint-config-sass)
+[![npm version](https://badge.fury.io/js/%40yoo-digital%2Fstylelint-config-css.svg)](https://www.npmjs.com/package/@yoo-digital/stylelint-config-css)
 
-Contains the settings and rules used for Sass/SCSS projects within YOO.
+Contains the settings and rules used for CSS projects within YOO.
 It is publicly available via the npm registry.
 
 ❗ Should be used in combination with our [Prettier config](https://github.com/yoo-digital/config/tree/main/packages/prettier).
@@ -19,7 +19,7 @@ After installing the packages, you can create a `.stylelintrc.js` file in the ro
 
 ```javascript
 module.exports = {
-  extends: '@yoo-digital/stylelint-config-sass',
+  extends: '@yoo-digital/stylelint-config-css',
 };
 ```
 
