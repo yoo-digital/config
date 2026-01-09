@@ -2,6 +2,7 @@
   "name": "@yoo-digital/prettier",
   "version": "1.2.1",
   "description": "Reusable prettier configuration for projects within YOO AG",
+  "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
