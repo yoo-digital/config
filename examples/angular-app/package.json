@@ -40,7 +40,7 @@
     "@angular/compiler-cli": "^21",
     "@types/jasmine": "~5.1.0",
     "@yoo-digital/eslint-config-angular": "21.0.0",
-    "@yoo-digital/prettier": "1.2.1",
+    "@yoo-digital/prettier": "1.2.2",
     "angular-eslint": "^21",
     "eslint": "^9.15.0",
     "jasmine-core": "~5.8.0",
