@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
+    "lint": "npm run lint:ts && npm run lint:css",
+    "lint:ts": "eslint .",
+    "lint:css": "stylelint '**/*.css'",
     "start": "vite preview",
     "format": "prettier --write ."
   },
@@ -21,6 +23,7 @@
     "@vitejs/plugin-react": "^4.6.0",
     "@yoo-digital/eslint-config-react": "3.0.0",
     "@yoo-digital/prettier": "1.2.2",
+    "@yoo-digital/stylelint-config-css": "0.0.0",
     "eslint": "^9",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-react-hooks": "^5.2.0",

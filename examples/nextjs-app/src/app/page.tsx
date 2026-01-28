@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import styles from './page.module.css';
 
 const MainContent = (): React.JSX.Element => (
@@ -43,7 +44,7 @@ const MainContent = (): React.JSX.Element => (
         Read our docs
       </a>
     </div>
-    <a href="/">Next.js ESLint Plugin should warn at the href attribute</a>
+    <Link href="/">Next.js ESLint Plugin should warn at the href attribute</Link>
   </main>
 );
 

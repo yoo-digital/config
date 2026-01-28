@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint -c eslint.config.mjs .",
+    "lint": "npm run lint:ts && npm run lint:css",
+    "lint:ts": "eslint -c eslint.config.mjs .",
+    "lint:css": "stylelint '**/*.css'",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -22,6 +24,7 @@
     "@types/react-dom": "^19",
     "@yoo-digital/eslint-config-react": "3.0.0",
     "@yoo-digital/prettier": "1.2.2",
+    "@yoo-digital/stylelint-config-css": "0.0.0",
     "eslint": "^9",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"

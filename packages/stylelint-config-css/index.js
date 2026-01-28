@@ -1,16 +1,8 @@
 module.exports = {
-  extends: ['stylelint-config-standard-scss'],
+  extends: ['stylelint-config-standard'],
   plugins: ['stylelint-order'],
   rules: {
-    'at-rule-disallowed-list': ['extend'],
     'at-rule-no-vendor-prefix': true,
-
-    // See:
-    // https://github.com/stylelint/stylelint/issues/5133
-    // https://github.com/stylelint/stylelint/pull/5202#issuecomment-830668530
-    // TODO: In the future @import statements have to be replaced by @use:
-    // https://sass-lang.com/documentation/at-rules/import
-    'no-invalid-position-at-import-rule': null,
     'media-feature-name-no-vendor-prefix': true,
     'property-no-vendor-prefix': true,
     'selector-no-vendor-prefix': true,
@@ -29,29 +21,7 @@ module.exports = {
     // Configuration options:
     // https://github.com/hudochenkov/stylelint-order/blob/master/rules/order/README.md
     'order/order': [
-      [
-        'dollar-variables',
-        'custom-properties',
-        {
-          type: 'at-rule',
-          name: 'include',
-        },
-        'declarations',
-        'rules',
-        {
-          type: 'at-rule',
-          name: 'container',
-        },
-        {
-          type: 'at-rule',
-          name: 'include',
-          parameter: 'up-to|at-least',
-        },
-        {
-          type: 'at-rule',
-          name: 'media',
-        },
-      ],
+      ['custom-properties', 'declarations', 'rules', 'at-rules'],
       {
         unspecified: 'ignore',
         disableFix: true,
@@ -574,22 +544,6 @@ module.exports = {
         ],
       },
     ],
-    'scss/double-slash-comment-inline': [
-      'never',
-      {
-        ignore: ['stylelint-commands'],
-      },
-    ],
-    'scss/dollar-variable-colon-space-before': 'never',
-    'scss/dollar-variable-colon-space-after': 'always-single-line',
-    'scss/dollar-variable-empty-line-before': null,
-    'scss/double-slash-comment-whitespace-inside': [
-      'always',
-      {
-        severity: 'warning',
-      },
-    ],
-    'scss/selector-no-redundant-nesting-selector': true,
     'value-keyword-case': [
       'lower',
       {
@@ -607,7 +561,7 @@ module.exports = {
   // See: https://github.com/stylelint/stylelint/issues/3259#issuecomment-656717023
   overrides: [
     {
-      files: ['**/*.module.scss'],
+      files: ['**/*.module.css'],
       rules: {
         'selector-class-pattern': '^[a-z][a-zA-Z0-9_-]+$',
         'selector-id-pattern': '^[a-z][a-zA-Z0-9_-]+$',

@@ -9,7 +9,7 @@
     box-sizing: border-box;
   }
 
-  // stylelint-disable-next-line
+  /* stylelint-disable-next-line selector-max-universal */
   *,
   ::before,
   ::after {
@@ -52,21 +52,21 @@
 // by providing the number of lines and the line height.
 // This will work for Edge, Firefox (latest) and Chrome.
 // It won't clip in IE 11.
-// stylelint-disable value-no-vendor-prefix, property-no-vendor-prefix
+/* stylelint-disable value-no-vendor-prefix, property-no-vendor-prefix */
 @mixin max-lines($number-of-lines, $line-height: $line-height-base) {
   display: -webkit-box;
+  -webkit-line-clamp: $number-of-lines;
   overflow: hidden;
   line-height: $line-height;
   text-overflow: ellipsis;
-  -webkit-line-clamp: $number-of-lines;
   -webkit-box-orient: vertical;
 }
-// stylelint-enable value-no-vendor-prefix, property-no-vendor-prefix
+/* stylelint-enable value-no-vendor-prefix, property-no-vendor-prefix */
 
 // The breakpoint function is a private utility function that is not intended
 // for external usage. It takes a breakpoint name, checks if it is defined,
 // and returns either the breakpoint value or a warning.
-// stylelint-disable-next-line
+/* stylelint-disable-next-line scss/at-function-pattern */
 @function _breakpoint($breakpoint) {
   @if map.has-key($breakpoints, $breakpoint) {
     @return map.get($breakpoints, $breakpoint);
@@ -124,13 +124,12 @@
 // the site where visual display is undesirable. Information provided in this
 // manner should be kept concise, to avoid unnecessary burden on the user.
 @mixin a11y-visually-hidden {
-  // stylelint-disable-next-line
+  /* stylelint-disable-next-line declaration-no-important */
   position: absolute !important;
-  clip: rect(1px, 1px, 1px, 1px);
   width: 1px;
   height: 1px;
   overflow: hidden;
-  word-wrap: normal;
+  overflow-wrap: normal;
 }
 
 // Hide visually and from screen-readers, but maintain layout.
