@@ -21,7 +21,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@yoo-digital/eslint-config-react": "3.0.0",
-    "@yoo-digital/prettier": "1.2.1",
+    "@yoo-digital/prettier": "1.2.2",
     "eslint": "^9",
     "prettier": "^3.6.2",
     "typescript": "^5.9.2"
