@@ -2,18 +2,18 @@
 
 body {
   color: $body-color;
-  font-family: $font-family-base;
-  font-size: $font-size-base;
   font-weight: $font-weight-base;
+  font-size: $font-size-base;
   line-height: $line-height-base;
+  font-family: $font-family-base;
 }
 
 h1,
 .h1 {
   margin-top: $h1-margin-top;
   margin-bottom: $h1-margin-bottom;
-  font-size: $h1-font-size;
   font-weight: $h1-font-weight;
+  font-size: $h1-font-size;
   line-height: $h1-line-height;
 }
 
@@ -21,8 +21,8 @@ h2,
 .h2 {
   margin-top: $h2-margin-top;
   margin-bottom: $h2-margin-bottom;
-  font-size: $h2-font-size;
   font-weight: $h2-font-weight;
+  font-size: $h2-font-size;
   line-height: $h2-line-height;
 }
 
@@ -30,8 +30,8 @@ h3,
 .h3 {
   margin-top: $h3-margin-top;
   margin-bottom: $h3-margin-bottom;
-  font-size: $h3-font-size;
   font-weight: $h3-font-weight;
+  font-size: $h3-font-size;
   line-height: $h3-line-height;
 }
 
@@ -39,8 +39,8 @@ h4,
 .h4 {
   margin-top: $h4-margin-top;
   margin-bottom: $h4-margin-bottom;
-  font-size: $h4-font-size;
   font-weight: $h4-font-weight;
+  font-size: $h4-font-size;
   line-height: $h4-line-height;
 }
 
@@ -48,8 +48,8 @@ h5,
 .h5 {
   margin-top: $h5-margin-top;
   margin-bottom: $h5-margin-bottom;
-  font-size: $h5-font-size;
   font-weight: $h5-font-weight;
+  font-size: $h5-font-size;
   line-height: $h5-line-height;
 }
 

@@ -1,10 +1,5 @@
 module.exports = {
-  plugins: [
-    'prettier-plugin-organize-attributes',
-    '@prettier/plugin-php',
-    '@trivago/prettier-plugin-sort-imports',
-    'prettier-plugin-css-order',
-  ],
+  plugins: ['prettier-plugin-organize-attributes', '@trivago/prettier-plugin-sort-imports'],
 
   // prettier options
   singleQuote: true,
@@ -20,12 +15,6 @@ module.exports = {
     '$ANGULAR_TWO_WAY_BINDING',
     '$ANGULAR_OUTPUT',
   ],
-
-  // plugin-php options
-  braceStyle: '1tbs',
-
-  // prettier-plugin-css-order options
-  cssDeclarationSorterOrder: 'smacss',
 
   // prettier-plugin-sort-imports options
   importOrder: ['^@', '^[a-zA-Z]', '^[./].*(?<!\\.s?css)$', '\\.s?css$'],
@@ -44,12 +33,6 @@ module.exports = {
       options: {
         singleQuote: false,
         printWidth: 120,
-      },
-    },
-    {
-      files: ['**/*.php'],
-      options: {
-        tabWidth: 4,
       },
     },
   ],
