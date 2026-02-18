@@ -7,8 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "npm run lint:ts && npm run lint:css",
-    "lint:ts": "eslint .",
-    "lint:css": "stylelint '**/*.css'",
+    "lint:ts": "eslint ./src",
+    "lint:css": "stylelint './src/**/*.css'",
     "start": "vite preview",
     "format": "prettier --write ."
   },

@@ -55,6 +55,10 @@
       "email": "sacha.schmid@yoo.digital"
     },
     {
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
+    },
+    {
       "name": "Tobias Wahl",
       "email": "tobias.wahl@yoo.digital"
     },
@@ -78,7 +82,8 @@
   },
   "dependencies": {
     "stylelint-config-standard": "^40.0.0",
-    "stylelint-order": "^7.0.0"
+    "stylelint-order": "^7.0.0",
+    "stylelint-config-property-sort-order-smacss": "~11.1.0"
   },
   "peerDependencies": {
     "stylelint": "^17"

@@ -26,9 +26,9 @@
 
   @layer layer-foo.layer-bar {
     a::after {
+      content: "→";
       display: block;
       background-image: url("x.svg");
-      content: "→";
     }
   }
 }

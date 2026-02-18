@@ -16,17 +16,47 @@
   },
   "contributors": [
     {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yoo.digital"
+    },
+    {
+      "name": "Hervé Brunner",
+      "email": "herve.brunner@yoo.digital"
+    },
+    {
       "name": "Kelvin Louis",
       "email": "kelvin.louis@yoo.digital"
     },
     {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yoo.digital"
+    },
+    {
       "name": "Sacha Schmid",
       "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
+    },
+    {
+      "name": "Tobias Wahl",
+      "email": "tobias.wahl@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yoo.digital"
     }
   ],
   "dependencies": {
-    "@prettier/plugin-php": "~0.22.2",
-    "prettier-plugin-css-order": "~2.0.1",
     "prettier-plugin-organize-attributes": "~1.0.0",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0"
   },

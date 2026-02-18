@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "npm run lint:ts && npm run lint:sass",
     "lint:ts": "ng lint",
-    "lint:sass": "stylelint '**/*.scss'",
+    "lint:sass": "stylelint './src/**/*.scss'",
     "format": "prettier --write"
   },
   "prettier": {

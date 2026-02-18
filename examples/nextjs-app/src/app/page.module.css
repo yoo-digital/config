@@ -36,11 +36,11 @@
 .main ol {
   margin: 0;
   padding-left: 0;
-  font-size: 14px;
-  line-height: 24px;
-  font-family: var(--font-geist-mono);
-  letter-spacing: -0.01em;
   list-style-position: inside;
+  font-family: var(--font-geist-mono);
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  line-height: 24px;
 }
 
 .main li:not(:last-of-type) {
@@ -51,8 +51,8 @@
   padding: 2px 4px;
   border-radius: 4px;
   background: var(--gray-alpha-100);
-  font-weight: 600;
   font-family: inherit;
+  font-weight: 600;
 }
 
 .ctas {
@@ -62,22 +62,22 @@
 
 .ctas a {
   display: flex;
-  appearance: none;
   align-items: center;
   justify-content: center;
   height: 48px;
   padding: 0 20px;
-  border: 0;
-  border: 1px solid transparent;
-  border-radius: 128px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  cursor: pointer;
   transition:
     background 0.2s,
     color 0.2s,
     border-color 0.2s;
+  border: 0;
+  border: 1px solid transparent;
+  border-radius: 128px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  appearance: none;
 }
 
 /* stylelint-disable-next-line selector-no-qualifying-type */
