@@ -125,6 +125,8 @@ export default tseslint.config(
       ],
       'no-await-in-loop': 'error',
       'no-useless-rename': 'error',
+      'no-console': 'error',
+      'object-shorthand': ['error', 'always'],
     },
   },
   {
