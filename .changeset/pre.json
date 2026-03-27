@@ -1,0 +1,18 @@
+{
+  "mode": "exit",
+  "tag": "canary",
+  "initialVersions": {
+    "@yoo-digital/example-angular-app": "0.0.0",
+    "@yoo-digital/example-nextjs-app": "0.0.0",
+    "@yoo-digital/example-react-app": "0.0.0",
+    "@yoo-digital/eslint-config-angular": "21.0.0",
+    "@yoo-digital/eslint-config-base": "3.0.0",
+    "@yoo-digital/eslint-config-react": "3.0.0",
+    "@yoo-digital/prettier": "1.2.2",
+    "@yoo-digital/stylelint-config-css": "0.0.0",
+    "@yoo-digital/stylelint-config-sass": "3.0.3"
+  },
+  "changesets": [
+    "curvy-sheep-dig"
+  ]
+}

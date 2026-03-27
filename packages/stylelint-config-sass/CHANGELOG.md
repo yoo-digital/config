@@ -1,5 +1,11 @@
 # Change log
 
+## 4.0.0-canary.0
+
+### Major Changes
+
+- 292ccd6: Update CSS ordering
+
 ## 3.0.3
 
 ### Patch Changes

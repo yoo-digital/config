@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:yoo-digital/typescript.git",
+    "url": "git@github.com:yoo-digital/config.git",
     "directory": "packages/eslint-config-angular"
   },
   "author": {
