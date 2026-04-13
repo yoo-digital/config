@@ -21,8 +21,8 @@
     "@angular/platform-browser": "^21",
     "@angular/router": "^21",
     "rxjs": "~7.8.0",
-    "tslib": "~2.3.0",
-    "zone.js": "~0.15.0"
+    "tslib": "~2.8.0",
+    "zone.js": "~0.16.0"
   },
   "devDependencies": {
     "@angular/build": "^21",
@@ -34,7 +34,7 @@
     "@yoo-digital/stylelint-config-css": "~1.0.0",
     "angular-eslint": "^21",
     "eslint": "~9.39.0",
-    "jasmine-core": "~5.8.0",
+    "jasmine-core": "~6.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",

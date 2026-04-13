@@ -13,12 +13,12 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "~19.2.0",
+    "react-dom": "~19.2.0"
   },
   "devDependencies": {
-    "@types/react": "^19.1.8",
-    "@types/react-dom": "^19.1.6",
+    "@types/react": "~19.2.0",
+    "@types/react-dom": "~19.2.0",
     "@typescript-eslint/parser": "~8.58.0",
     "@vitejs/plugin-react": "~6.0.1",
     "@yoo-digital/eslint-config-react": "~3.0.0",
@@ -26,8 +26,8 @@
     "@yoo-digital/stylelint-config-css": "~1.0.0",
     "eslint": "~9.39.0",
     "eslint-import-resolver-typescript": "~4.4.4",
-    "eslint-plugin-react-hooks": "~5.2.0",
-    "eslint-plugin-react-refresh": "~0.4.20",
+    "eslint-plugin-react-hooks": "~7.0.0",
+    "eslint-plugin-react-refresh": "~0.5.0",
     "globals": "~16.3.0",
     "prettier": "~3.6.2",
     "typescript": "~5.9.2",
