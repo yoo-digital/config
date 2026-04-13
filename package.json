@@ -80,10 +80,10 @@
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",
-    "@changesets/cli": "^2.29.5",
-    "@typescript-eslint/parser": "^8.57.0",
+    "@changesets/cli": "~2.29.5",
+    "@typescript-eslint/parser": "~8.58.0",
     "@yoo-digital/prettier": "*",
-    "turbo": "^2.5.4"
+    "turbo": "~2.5.4"
   },
   "workspaces": [
     "packages/*",
