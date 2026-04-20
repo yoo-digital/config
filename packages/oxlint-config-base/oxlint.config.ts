@@ -11,7 +11,11 @@ export default defineConfig({
   },
   rules: {
     // eslint (pedantic)
+    'eslint/max-depth': ['warn', { max: 3 }],
     'eslint/max-lines-per-function': ['warn', { max: 50 }],
+
+    // eslint (perf)
+    'eslint/no-await-in-loop': 'error',
 
     // typescript (pedantic)
     'typescript/no-deprecated': 'warn',
@@ -20,6 +24,7 @@ export default defineConfig({
 
     // typescript (restriction)
     'typescript/explicit-function-return-type': 'error',
+    'typescript/no-empty-object-type': 'error',
     'typescript/no-explicit-any': 'warn',
     'typescript/no-non-null-assertion': 'error',
     'typescript/use-unknown-in-catch-callback-variable': 'warn',
@@ -38,9 +43,9 @@ export default defineConfig({
     // typescript (suspicious)
     'typescript/consistent-return': 'error',
     'typescript/no-unnecessary-type-arguments': 'error',
-    'typescript/no-unnecessary-type-assertion ': 'error',
+    'typescript/no-unnecessary-type-assertion': 'error',
     'typescript/no-unnecessary-type-conversion': 'error',
-    'typescript/no-unnecessary-type-parameters ': 'error',
+    'typescript/no-unnecessary-type-parameters': 'error',
     'typescript/no-unsafe-type-assertion': 'warn',
 
     // unicorn (pedantic)

@@ -12,10 +12,15 @@ export default defineConfig({
   },
   rules: {
     // jsx-a11y (correctness)
-    'jsx-a11y/alt-text': 'warn',
-    'jsx-a11y/img-redundant-alt': 'allow',
+    'jsx-a11y/img-redundant-alt': 'off',
+    'jsx-a11y/click-events-have-key-events': 'warn',
+    'jsx-a11y/no-static-element-interactions': 'warn',
+
+    // react (correctness)
+    'react/exhaustive-deps': 'warn',
 
     // react (pedantic)
+    'react/jsx-no-useless-fragment': 'warn',
     'react/rules-of-hooks': 'error',
 
     // react (perf)
@@ -26,7 +31,8 @@ export default defineConfig({
 
     // react (style)
     'react/hook-use-state': 'warn',
-    'react/jsx-boolean-value': 'error',
+    'react/jsx-boolean-value': ['error', 'never'],
+    'react/jsx-curly-brace-presence': ['error', { props: 'never', children: 'never' }],
     'react/jsx-pascal-case': 'error',
     'react/self-closing-comp': 'error',
   },
