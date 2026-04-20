@@ -1,5 +1,12 @@
 # Change Log
 
+## 3.0.1
+
+### Patch Changes
+
+- f1a1c39: Update vulnerable dependencies
+- e88a5d4: resolve vulnerable dependencies
+
 ## 3.0.0
 
 ### Major Changes

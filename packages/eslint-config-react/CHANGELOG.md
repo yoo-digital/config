@@ -1,5 +1,15 @@
 # Change Log
 
+## 3.0.1
+
+### Patch Changes
+
+- f1a1c39: Update vulnerable dependencies
+- e88a5d4: resolve vulnerable dependencies
+- Updated dependencies [f1a1c39]
+- Updated dependencies [e88a5d4]
+  - @yoo-digital/eslint-config-base@3.0.1
+
 ## 3.0.0
 
 ### Major Changes
