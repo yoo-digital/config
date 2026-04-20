@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/eslint-config-react",
   "description": "ESLint configuration file containing rules for React projects using TypeScript",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -81,7 +81,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "~3.0.1"
+    "@yoo-digital/eslint-config-base": "~3.0.2"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "~8.58.0",
