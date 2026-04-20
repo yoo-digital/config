@@ -1,5 +1,11 @@
 # Change Log
 
+## 21.0.2
+
+### Patch Changes
+
+- 67c77f1: Relax peer dependency version constraints from patch-level (~) to minor-level (^)
+
 ## 21.0.1
 
 ### Patch Changes

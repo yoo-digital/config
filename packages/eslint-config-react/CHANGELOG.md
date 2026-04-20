@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.0.2
+
+### Patch Changes
+
+- 67c77f1: Relax peer dependency version constraints from patch-level (~) to minor-level (^)
+- Updated dependencies [67c77f1]
+  - @yoo-digital/eslint-config-base@3.0.2
+
 ## 3.0.1
 
 ### Patch Changes
