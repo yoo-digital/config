@@ -10,7 +10,9 @@
     "Configuration",
     "Prettier",
     "ESLint",
-    "TypeScript"
+    "TypeScript",
+    "Oxlint",
+    "Oxfmt"
   ],
   "repository": {
     "type": "git",

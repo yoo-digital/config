@@ -1,0 +1,38 @@
+{
+  "name": "oxfmt-config-base",
+  "description": "Oxfmt configuration for general frontend projects",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "Oxfmt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yoo-digital/config.git",
+    "directory": "packages/oxfmt-config-base"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "exports": {
+    ".": {
+      "import": "./oxfmt.config.ts",
+      "require": "./oxfmt.config.ts"
+    }
+  },
+  "files": [
+    "oxfmt.config.ts"
+  ],
+  "devDependencies": {
+    "oxfmt": "^0.45.0"
+  },
+  "peerDependencies": {
+    "oxfmt": "^0.45.0"
+  }
+}

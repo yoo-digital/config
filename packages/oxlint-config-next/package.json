@@ -1,0 +1,41 @@
+{
+  "name": "oxlint-config-next",
+  "description": "Oxlint configuration for Next.js projects",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "TypeScript",
+    "React",
+    "Next.js",
+    "Oxlint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yoo-digital/config.git",
+    "directory": "packages/oxlint-config-next"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "exports": {
+    ".": {
+      "import": "./oxlint.config.ts",
+      "require": "./oxlint.config.ts"
+    }
+  },
+  "files": [
+    "oxlint.config.ts"
+  ],
+  "devDependencies": {
+    "oxlint": "^1.60.0"
+  },
+  "peerDependencies": {
+    "oxlint": "^1.60.0"
+  }
+}
