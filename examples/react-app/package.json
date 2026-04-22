@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "npm run lint:ts && npm run lint:css",
+    "lint": "pnpm lint:ts && pnpm lint:css",
     "lint:ts": "eslint ./src",
     "lint:css": "stylelint './src/**/*.css'",
     "start": "vite preview",
@@ -30,6 +30,7 @@
     "eslint-plugin-react-refresh": "~0.5.0",
     "globals": "~16.3.0",
     "prettier": "~3.6.2",
+    "stylelint": "~17.8.0",
     "typescript": "~5.9.2",
     "vite": "~8.0.8"
   },
