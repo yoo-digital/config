@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npm run lint:ts && npm run lint:css",
+    "lint": "pnpm lint:ts && pnpm lint:css",
     "lint:ts": "eslint -c eslint.config.mjs ./src",
     "lint:css": "stylelint './src/**/*.css'",
     "format": "prettier --write ."
@@ -27,6 +27,7 @@
     "@yoo-digital/stylelint-config-css": "~1.0.0",
     "eslint": "~9.39.0",
     "prettier": "~3.6.2",
+    "stylelint": "~17.8.0",
     "typescript": "~5.9.2"
   },
   "engines": {

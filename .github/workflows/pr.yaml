@@ -11,22 +11,26 @@ concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   lint:
-    name: Create Snapshot Release
+    name: Lint project
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
+      - name: Checkout repo
         uses: actions/checkout@v3
         with:
           # This ensures we get the full git history for changesets
           fetch-depth: 0
 
-      - name: Setup Node.js 24.x
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 24.x
+          node-version-file: '.nvmrc'
+          cache: 'pnpm'
 
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Linting
-        run: npm run lint
+        run: pnpm lint

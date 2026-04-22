@@ -68,11 +68,11 @@
     }
   ],
   "scripts": {
-    "dev": "turbo run dev --parallel",
-    "build": "turbo run build --parallel",
-    "start": "turbo run start --parallel",
-    "lint": "turbo run lint --parallel",
-    "format": "turbo run format --parallel",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
@@ -85,14 +85,9 @@
     "@yoo-digital/prettier": "*",
     "turbo": "~2.9.6"
   },
-  "workspaces": [
-    "packages/*",
-    "examples/*"
-  ],
-  "packageManager": "npm@11.3.0",
+  "packageManager": "pnpm@10.33.0",
   "engines": {
-    "node": "^24.0.0",
-    "npm": "^11.3.0"
-  },
-  "prettier": "@yoo-digital/prettier"
+    "node": ">=24",
+    "pnpm": ">=10"
+  }
 }

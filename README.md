@@ -35,7 +35,7 @@ This repository uses [changesets](https://github.com/changesets/changesets) to m
 In order to create a new change run the following command:
 
 ```bash
-npm run changeset
+pnpm changeset
 ```
 
 In the interactive prompt you select the packages that are affected by your changes and you select the version increments that are to be done for the individual packages (major, minor, patch).
@@ -55,7 +55,7 @@ When changesets are merged into the `main` branch, the Changesets CI action will
 Manual versioning can be done with the following command (but should not be done manually in most cases):
 
 ```bash
-npm run changeset:version
+pnpm changeset:version
 ```
 
 See [changesets versioning and publishing](https://github.com/changesets/changesets/blob/c7b6832a7a2783073e720d2085a546810e9b55eb/docs/intro-to-using-changesets.md#versioning-and-publishing)
@@ -72,7 +72,7 @@ As soon as the packages are versioned and pushed to the `main` branch, the Chang
 > ⚠️ If the package that is to be released must be built first, make sure to run the build command before running the publishing command.
 
 ```bash
-npm run changeset:publish
+pnpm changeset:publish
 ```
 
 See [changesets versioning and publishing](https://github.com/changesets/changesets/blob/c7b6832a7a2783073e720d2085a546810e9b55eb/docs/intro-to-using-changesets.md#versioning-and-publishing)
@@ -97,6 +97,6 @@ See [changesets pre-releases](https://github.com/changesets/changesets/blob/c7b6
 
 ## Development
 
-This repository is a monorepo that makes use of NPM workspaces and Turbo for task orchestration.
+This repository is a monorepo that makes use of pnpm workspaces and Turbo for task orchestration.
 Apart from the eslint-configurations and prettier configuration, it also example repositories to test the configurations against.
 The packages to publish are located in the `packages` directory, while the example repositories are located in the `examples` directory.

@@ -52,4 +52,4 @@ It should not contain any rules that are specific to Angular or React.
 
 Before creating a pull request or publishing changes, make sure you tested your changes.
 Within this mono-repository you will find an example Angular application in the `examples/angular-app` directory.
-Run `npm run lint` in that directory to test your changes.
+Run `pnpm lint` in that directory to test your changes.

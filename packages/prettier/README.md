@@ -21,7 +21,7 @@ Every developer can and should contribute to this repository. It should be in ev
 Install the configuration:
 
 ```text
-npm i @yoo-digital/prettier --save-dev
+pnpm add -D @yoo-digital/prettier
 ```
 
 Reference the configuration in your package.json:

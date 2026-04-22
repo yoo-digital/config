@@ -77,8 +77,8 @@
     "lint": "stylelint \"__test__/**/*.css\""
   },
   "engines": {
-    "node": ">= 18",
-    "npm": ">= 8"
+    "node": ">=24",
+    "pnpm": ">=10"
   },
   "dependencies": {
     "stylelint-config-standard": "~40.0.0",

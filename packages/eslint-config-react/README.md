@@ -48,4 +48,4 @@ Check the chapter below, for a complete set of rules that can be applied.
 
 Before creating a pull request or publishing changes, make sure you tested your changes.
 Within this mono-repository you will find an example React application in the `examples/react-app` directory and a Next.js application in the `examples/nextjs-app` directory.
-Run `npm run lint` in these directories to test your changes.
+Run `pnpm lint` in these directories to test your changes.
