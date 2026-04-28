@@ -1,5 +1,11 @@
 # Change log
 
+## 4.0.1
+
+### Patch Changes
+
+- f6084cd: Disable selector-no-qualifying-type as it does not apply to sass projects
+
 ## 4.0.0
 
 ### Major Changes
