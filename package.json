@@ -81,8 +81,10 @@
   "devDependencies": {
     "@changesets/changelog-github": "~0.6.0",
     "@changesets/cli": "~2.30.0",
+    "@trivago/prettier-plugin-sort-imports": "~4.3.0",
     "@typescript-eslint/parser": "~8.58.0",
     "@yoo-digital/prettier": "*",
+    "prettier-plugin-organize-attributes": "~1.0.0",
     "turbo": "~2.9.6"
   },
   "packageManager": "pnpm@10.33.0",
