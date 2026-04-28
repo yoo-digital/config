@@ -80,7 +80,7 @@ module.exports = {
       },
     ],
     'selector-max-universal': 0,
-    'selector-no-qualifying-type': true,
+    'selector-no-qualifying-type': null,
     'no-descending-specificity': null,
     'selector-pseudo-class-no-unknown': [
       true,
