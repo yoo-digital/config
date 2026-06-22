@@ -27,7 +27,7 @@
     "@yoo-digital/stylelint-config-css": "~1.0.0",
     "eslint": "~9.39.0",
     "prettier": "~3.6.2",
-    "stylelint": "~17.8.0",
+    "stylelint": "~17.13.0",
     "typescript": "~5.9.2"
   },
   "engines": {
