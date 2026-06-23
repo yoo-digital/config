@@ -30,7 +30,7 @@
     "@angular/compiler-cli": "^22",
     "@types/jasmine": "~5.1.0",
     "@yoo-digital/eslint-config-base": "~3.0.2",
-    "@yoo-digital/eslint-config-angular": "~21.0.2",
+    "@yoo-digital/eslint-config-angular": "~22.0.0",
     "@yoo-digital/prettier": "~1.3.0",
     "@yoo-digital/stylelint-config-css": "~1.0.0",
     "angular-eslint": "^22",
