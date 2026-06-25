@@ -1,5 +1,11 @@
 # Change Log
 
+## 3.0.3
+
+### Patch Changes
+
+- 9f0289d: Add support for new typescript versions
+
 ## 3.0.2
 
 ### Patch Changes
