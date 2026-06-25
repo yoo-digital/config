@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.0.3
+
+### Patch Changes
+
+- 9f0289d: Add support for new typescript versions
+- Updated dependencies [9f0289d]
+  - @yoo-digital/eslint-config-base@3.0.3
+
 ## 3.0.2
 
 ### Patch Changes
