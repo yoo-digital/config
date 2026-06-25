@@ -81,7 +81,7 @@
     "tsconfig.json"
   ],
   "dependencies": {
-    "@yoo-digital/eslint-config-base": "~3.0.3"
+    "@yoo-digital/eslint-config-base": "workspace:~"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "~8.58.0",
