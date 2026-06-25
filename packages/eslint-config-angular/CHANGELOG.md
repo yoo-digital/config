@@ -1,5 +1,11 @@
 # Change Log
 
+## 22.0.0
+
+### Major Changes
+
+- a1efb77: Add support for Angular 22
+
 ## 21.0.2
 
 ### Patch Changes
