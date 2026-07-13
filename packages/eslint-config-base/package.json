@@ -66,16 +66,11 @@
     ".": {
       "import": "./eslint.config.mjs",
       "require": "./eslint.config.mjs"
-    },
-    "./legacy": {
-      "import": "./legacy.js",
-      "require": "./legacy.js"
     }
   },
   "files": [
     "LICENSE",
     "README.md",
-    "legacy.js",
     "eslint.config.mjs",
     "tsconfig.json"
   ],
