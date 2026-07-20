@@ -1,8 +1,8 @@
 // @ts-check
 import angular from 'angular-eslint';
-import tseslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
-export default tseslint.config(
+export default defineConfig(
   {
     files: ['**/*.ts'],
     extends: [...angular.configs.tsRecommended],
@@ -52,18 +52,8 @@ export default tseslint.config(
             'changeDetection',
             'encapsulation',
           ],
-          Directive: [
-            'selector',
-            'standalone',
-            'providers',
-            'host',
-            'hostDirectives',
-          ],
-          Pipe: [
-            'name',
-            'pure',
-            'standalone',
-          ],
+          Directive: ['selector', 'standalone', 'providers', 'host', 'hostDirectives'],
+          Pipe: ['name', 'pure', 'standalone'],
         },
       ],
       '@angular-eslint/use-component-view-encapsulation': 'warn',
