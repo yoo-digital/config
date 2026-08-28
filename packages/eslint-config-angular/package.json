@@ -75,6 +75,10 @@
     "eslint.config.mjs",
     "tsconfig.json"
   ],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
   "devDependencies": {
     "@angular-eslint/builder": "~22.1.0",
     "@angular-eslint/eslint-plugin": "~22.1.0",

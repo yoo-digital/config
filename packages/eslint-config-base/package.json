@@ -74,6 +74,10 @@
     "eslint.config.mjs",
     "tsconfig.json"
   ],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
   "devDependencies": {
     "@eslint/js": "~10.0.1",
     "eslint": "~10.9.1",

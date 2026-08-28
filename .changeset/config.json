@@ -1,6 +1,6 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
-  "changelog": ["@changesets/cli/changelog", "@changesets/changelog-github"],
+  "changelog": ["@changesets/changelog-github", { "repo": "yoo-digital/config" }],
   "commit": false,
   "fixed": [["@yoo-digital/eslint-config-base", "@yoo-digital/eslint-config-react"]],
   "linked": [

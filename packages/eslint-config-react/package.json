@@ -75,6 +75,10 @@
     "eslint.config.mjs",
     "tsconfig.json"
   ],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
   "dependencies": {
     "@yoo-digital/eslint-config-base": "workspace:~"
   },

@@ -78,7 +78,7 @@
   },
   "engines": {
     "node": ">=24",
-    "pnpm": ">=10"
+    "pnpm": ">=11"
   },
   "dependencies": {
     "stylelint-config-standard-scss": "~17.0.0",
