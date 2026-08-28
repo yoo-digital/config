@@ -56,20 +56,13 @@ export default defineConfig(
         },
       ],
       '@typescript-eslint/no-empty-object-type': 'warn',
-      'import-x/consistent-type-specifier-style': 'off',
 
-      // Disable base rules that can report incorrect errors with TypeScript
-      'no-useless-constructor': 'off',
+      // TypeScript-aware equivalents of base rules that can report incorrect errors with TypeScript
       '@typescript-eslint/no-useless-constructor': 'error',
-
-      'no-shadow': 'off',
       '@typescript-eslint/no-shadow': 'error',
-
-      'no-use-before-define': 'off',
       '@typescript-eslint/no-use-before-define': ['error'],
 
       // Additional TypeScript rules
-      '@typescript-eslint/no-inferrable-types': 'off',
       '@typescript-eslint/unified-signatures': 'warn',
       '@typescript-eslint/member-ordering': [
         'warn',

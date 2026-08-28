@@ -58,8 +58,6 @@ export default defineConfig(
       ],
       '@angular-eslint/use-component-view-encapsulation': 'warn',
       '@angular-eslint/use-injectable-provided-in': 'error',
-      'class-methods-use-this': 'off',
-      'import-x/prefer-default-export': 'off',
       'no-underscore-dangle': [
         'error',
         {
@@ -81,7 +79,6 @@ export default defineConfig(
       '@angular-eslint/template/no-any': 'error',
       '@angular-eslint/template/no-duplicate-attributes': 'error',
       '@angular-eslint/template/no-interpolation-in-attributes': 'error',
-      '@angular-eslint/template/prefer-control-flow': 'error',
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
       '@angular-eslint/template/prefer-static-string-properties': 'error',
       '@angular-eslint/template/prefer-template-literal': 'error',
