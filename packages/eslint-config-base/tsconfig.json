@@ -2,26 +2,22 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "module": "ES2022",
     "moduleResolution": "bundler",
+    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "./build",
     "pretty": true,
     "resolveJsonModule": true,
-    "rootDirs": ["src"],
     "skipLibCheck": true,
     "strict": true
   },
-  "include": ["src/**/*.ts", "stories/**/*.ts"],
-  "exclude": ["build", "dist", "node_modules", "src/**/*.spec.ts"]
+  "include": ["eslint.config.mjs"]
 }
