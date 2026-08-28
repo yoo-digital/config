@@ -125,6 +125,7 @@ export default defineConfig(
       ],
       'no-await-in-loop': 'error',
       'no-useless-rename': 'error',
+      'no-console': 'warn',
     },
   },
   {
