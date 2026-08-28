@@ -58,7 +58,7 @@
   ],
   "dependencies": {
     "prettier-plugin-organize-attributes": "~1.0.0",
-    "@trivago/prettier-plugin-sort-imports": "^4.3.0"
+    "@trivago/prettier-plugin-sort-imports": "~6.0.2"
   },
   "peerDependencies": {
     "prettier": "^3"
