@@ -1,6 +1,6 @@
 // @ts-check
 import eslint from '@eslint/js';
-import importPlugin from 'eslint-plugin-import';
+import { importX } from 'eslint-plugin-import-x';
 import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
@@ -10,8 +10,8 @@ export default defineConfig(
     files: ['**/*.ts', '**/*.tsx'],
     extends: [
       tseslint.configs.recommended,
-      importPlugin.flatConfigs.recommended,
-      importPlugin.flatConfigs.typescript,
+      importX.flatConfigs.recommended,
+      importX.flatConfigs.typescript,
     ],
     languageOptions: {
       parserOptions: {
@@ -19,7 +19,7 @@ export default defineConfig(
       },
     },
     settings: {
-      'import/resolver': {
+      'import-x/resolver': {
         node: {
           extensions: ['.js', '.jsx', '.mjs'],
         },
@@ -56,7 +56,7 @@ export default defineConfig(
         },
       ],
       '@typescript-eslint/no-empty-object-type': 'warn',
-      'import/consistent-type-specifier-style': 'off',
+      'import-x/consistent-type-specifier-style': 'off',
 
       // Disable base rules that can report incorrect errors with TypeScript
       'no-useless-constructor': 'off',
@@ -100,7 +100,7 @@ export default defineConfig(
         },
       ],
       // Import rules
-      'import/no-extraneous-dependencies': [
+      'import-x/no-extraneous-dependencies': [
         'error',
         {
           devDependencies: [
@@ -112,7 +112,7 @@ export default defineConfig(
           ],
         },
       ],
-      'import/export': 'warn',
+      'import-x/export': 'warn',
       // Code quality rules
       'max-depth': ['warn', 3],
       'max-lines-per-function': [

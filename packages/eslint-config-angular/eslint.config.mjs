@@ -59,7 +59,7 @@ export default defineConfig(
       '@angular-eslint/use-component-view-encapsulation': 'warn',
       '@angular-eslint/use-injectable-provided-in': 'error',
       'class-methods-use-this': 'off',
-      'import/prefer-default-export': 'off',
+      'import-x/prefer-default-export': 'off',
       'no-underscore-dangle': [
         'error',
         {
