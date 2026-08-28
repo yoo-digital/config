@@ -21,7 +21,6 @@ export default defineConfig(baseConfig, {
   },
   rules: {
     // React recommended rules
-    ...reactHooksPlugin.configs.recommended.rules,
     ...jsxA11yPlugin.configs.recommended.rules,
 
     // React-specific customizations (formerly eslint-plugin-react, replaced by @eslint-react/eslint-plugin)

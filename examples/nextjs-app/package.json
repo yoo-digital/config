@@ -25,12 +25,12 @@
     "@yoo-digital/eslint-config-react": "workspace:~",
     "@yoo-digital/prettier": "workspace:~",
     "@yoo-digital/stylelint-config-css": "workspace:~",
-    "eslint": "~9.39.0",
+    "eslint": "~10.0.1",
     "prettier": "~3.6.2",
     "stylelint": "~17.13.0",
     "typescript": "~5.9.2"
   },
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=20.19.0"
   }
 }
