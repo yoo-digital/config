@@ -92,6 +92,7 @@
   },
   "devDependencies": {
     "@yoo-digital/prettier": "~1.3.0",
+    "prettier": "~3.6.2",
     "stylelint": "^17"
   },
   "prettier": "@yoo-digital/prettier"
