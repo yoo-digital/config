@@ -74,7 +74,9 @@
     "README.md"
   ],
   "scripts": {
-    "lint": "stylelint \"__test__/**/*.css\""
+    "lint": "stylelint \"__test__/**/*.css\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "engines": {
     "node": ">=24",
