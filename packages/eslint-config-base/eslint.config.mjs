@@ -1,32 +1,23 @@
 // @ts-check
-import eslint from '@eslint/js';
+import js from '@eslint/js';
+import * as tsParser from '@typescript-eslint/parser';
 import { importX } from 'eslint-plugin-import-x';
-import { defineConfig } from 'eslint/config';
-import tseslint from 'typescript-eslint';
+import { configs as tsEslintConfigs } from 'typescript-eslint';
 
-export default defineConfig(
-  eslint.configs.recommended,
+export default [
+  js.configs.recommended,
+  ...tsEslintConfigs.recommended,
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
   {
-    files: ['**/*.ts', '**/*.tsx'],
-    extends: [
-      tseslint.configs.recommended,
-      importX.flatConfigs.recommended,
-      importX.flatConfigs.typescript,
-    ],
+    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
     languageOptions: {
+      parser: tsParser,
       parserOptions: {
         projectService: true,
       },
-    },
-    settings: {
-      'import-x/resolver': {
-        node: {
-          extensions: ['.js', '.jsx', '.mjs'],
-        },
-        typescript: {
-          extensions: ['.ts', '.tsx'],
-        },
-      },
+      ecmaVersion: 'latest',
+      sourceType: 'module',
     },
     rules: {
       // TypeScript-specific rules
@@ -92,6 +83,7 @@ export default defineConfig(
           },
         },
       ],
+
       // Import rules
       'import-x/no-extraneous-dependencies': [
         'error',
@@ -101,11 +93,12 @@ export default defineConfig(
             'stories/**',
             '**/*.test.*',
             '**/*.spec.*',
-            '*.config.{js,ts,mjs}',
+            '**/*.config.{js,ts,mjs}',
           ],
         },
       ],
       'import-x/export': 'warn',
+
       // Code quality rules
       'max-depth': ['warn', 3],
       'max-lines-per-function': [
@@ -128,4 +121,4 @@ export default defineConfig(
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
-);
+];
