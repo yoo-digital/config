@@ -4,6 +4,10 @@
   "description": "Reusable prettier configuration for projects within YOO AG",
   "license": "MIT",
   "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:yoo-digital/config.git",

@@ -26,6 +26,9 @@
     "lint": {},
     "format": {
       "cache": false
+    },
+    "format:check": {
+      "cache": false
     }
   },
   "globalDependencies": [

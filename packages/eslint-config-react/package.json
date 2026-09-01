@@ -6,6 +6,10 @@
   "publishConfig": {
     "access": "public"
   },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
   "keywords": [
     "TypeScript",
     "React",
@@ -89,7 +93,8 @@
     "eslint-plugin-import": "~2.32.0",
     "eslint-plugin-jsx-a11y": "~6.10.2",
     "eslint-plugin-react": "~7.37.5",
-    "eslint-plugin-react-hooks": "~5.2.0"
+    "eslint-plugin-react-hooks": "~5.2.0",
+    "prettier": "~3.6.2"
   },
   "peerDependencies": {
     "@typescript-eslint/parser": "^8.58.0",

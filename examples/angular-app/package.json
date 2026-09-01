@@ -10,7 +10,8 @@
     "lint": "pnpm lint:ts && pnpm lint:css",
     "lint:ts": "ng lint",
     "lint:css": "stylelint './src/**/*.css'",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "private": true,
   "dependencies": {
@@ -41,6 +42,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "~3.6.2",
     "stylelint": "~17.13.0",
     "typescript": "~6.0.0",
     "typescript-eslint": "^8.61.0"
