@@ -12,15 +12,63 @@ export default [
   {
     files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
     languageOptions: {
-      parser: tsParser,
-      parserOptions: {
-        projectService: true,
-      },
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
     rules: {
+      // Import rules
+      'import-x/no-extraneous-dependencies': [
+        'error',
+        {
+          devDependencies: [
+            '.storybook/**',
+            'stories/**',
+            '**/*.test.*',
+            '**/*.spec.*',
+            '**/*.config.{js,ts,mjs}',
+          ],
+        },
+      ],
+      'import-x/export': 'warn',
+
+      // Code quality rules
+      'max-depth': ['warn', 3],
+      'max-lines-per-function': [
+        'warn',
+        {
+          max: 50,
+          skipBlankLines: true,
+          skipComments: true,
+        },
+      ],
+      'no-await-in-loop': 'error',
+      'no-useless-rename': 'error',
+      'no-console': 'warn',
+      'no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
+    },
+  },
+  {
+    files: ['**/*.{ts,tsx,mts,cts}'],
+    languageOptions: {
+      parser: tsParser,
+      parserOptions: {
+        projectService: true,
+      },
+    },
+    rules: {
       // TypeScript-specific rules
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -83,35 +131,6 @@ export default [
           },
         },
       ],
-
-      // Import rules
-      'import-x/no-extraneous-dependencies': [
-        'error',
-        {
-          devDependencies: [
-            '.storybook/**',
-            'stories/**',
-            '**/*.test.*',
-            '**/*.spec.*',
-            '**/*.config.{js,ts,mjs}',
-          ],
-        },
-      ],
-      'import-x/export': 'warn',
-
-      // Code quality rules
-      'max-depth': ['warn', 3],
-      'max-lines-per-function': [
-        'warn',
-        {
-          max: 50,
-          skipBlankLines: true,
-          skipComments: true,
-        },
-      ],
-      'no-await-in-loop': 'error',
-      'no-useless-rename': 'error',
-      'no-console': 'warn',
     },
   },
   {
