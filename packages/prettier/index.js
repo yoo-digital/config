@@ -1,3 +1,6 @@
+// @ts-check
+
+/** @type {import('prettier').Config} */
 module.exports = {
   plugins: ['prettier-plugin-organize-attributes', '@trivago/prettier-plugin-sort-imports'],
 

@@ -288,6 +288,10 @@ importers:
       prettier-plugin-organize-attributes:
         specifier: ~1.0.0
         version: 1.0.0(prettier@3.9.6)
+    devDependencies:
+      typescript:
+        specifier: ~6.0.3
+        version: 6.0.3
 
   packages/stylelint-config-css:
     dependencies:
@@ -304,6 +308,9 @@ importers:
       stylelint:
         specifier: ~17.14.1
         version: 17.14.1(supports-color@10.2.2)(typescript@6.0.3)
+      typescript:
+        specifier: ~6.0.3
+        version: 6.0.3
 
   packages/stylelint-config-sass:
     dependencies:
@@ -320,6 +327,9 @@ importers:
       stylelint:
         specifier: ~17.14.1
         version: 17.14.1(supports-color@10.2.2)(typescript@6.0.3)
+      typescript:
+        specifier: ~6.0.3
+        version: 6.0.3
 
 packages:
 

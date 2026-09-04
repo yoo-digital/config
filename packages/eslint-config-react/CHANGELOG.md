@@ -1,5 +1,13 @@
 # Change Log
 
+## 4.0.0-canary.3
+
+### Patch Changes
+
+- Added a hand-written `eslint.config.d.mts` declaration file (typed as `Linter.Config[]`) and wired it up via the `types` export condition, so an `eslint.config.ts` importing this package resolves correct types. No runtime behavior change.
+- Updated dependencies []:
+  - @yoo-digital/eslint-config-base@4.0.0-canary.3
+
 ## 4.0.0-canary.2
 
 ### Patch Changes

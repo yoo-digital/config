@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/stylelint-config-sass",
   "description": "Stylelint configuration file containing rules for Sass projects",
-  "version": "4.0.2-canary.0",
+  "version": "4.0.2-canary.1",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
@@ -68,10 +68,13 @@
     }
   ],
   "main": "index.js",
+  "types": "index.d.ts",
   "files": [
+    "index.d.ts",
     "index.js",
     "LICENSE",
-    "README.md"
+    "README.md",
+    "tsconfig.json"
   ],
   "scripts": {
     "lint": "stylelint \"__test__/**/*.scss\""
@@ -86,7 +89,8 @@
     "stylelint-config-property-sort-order-smacss": "~11.2.0"
   },
   "devDependencies": {
-    "stylelint": "~17.14.1"
+    "stylelint": "~17.14.1",
+    "typescript": "~6.0.3"
   },
   "peerDependencies": {
     "stylelint": "^17"

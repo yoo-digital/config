@@ -1,5 +1,11 @@
 # Change log
 
+## 4.0.2-canary.1
+
+### Patch Changes
+
+- Added `// @ts-check` + JSDoc typing to `index.js` and a hand-written `index.d.ts` (typed via stylelint's own `Config` type), wired up via the `types` field, so a `stylelint.config.ts` importing this package resolves correct types. No runtime behavior change.
+
 ## 4.0.2-canary.0
 
 ### Patch Changes
