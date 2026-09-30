@@ -80,12 +80,13 @@
     "changeset:status": "changeset status"
   },
   "devDependencies": {
-    "@changesets/changelog-github": "~1.0.0",
-    "@changesets/cli": "~3.0.1",
+    "@changesets/changelog-github": "~1.0.1",
+    "@changesets/cli": "~3.0.3",
     "@trivago/prettier-plugin-sort-imports": "~6.0.2",
     "@yoo-digital/prettier": "workspace:~",
+    "prettier": "~3.9.9",
     "prettier-plugin-organize-attributes": "~1.0.0",
-    "turbo": "~2.10.12"
+    "turbo": "~2.11.5"
   },
   "packageManager": "pnpm@11.24.0",
   "engines": {

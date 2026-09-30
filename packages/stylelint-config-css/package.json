@@ -91,12 +91,9 @@
     "stylelint-config-property-sort-order-smacss": "~11.2.0"
   },
   "devDependencies": {
-    "@yoo-digital/prettier": "~1.3.0",
-    "prettier": "~3.6.2",
-    "stylelint": "^17"
+    "stylelint": "~17.15.0"
   },
   "peerDependencies": {
     "stylelint": "^17"
-  },
-  "prettier": "@yoo-digital/prettier"
+  }
 }
