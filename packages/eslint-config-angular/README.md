@@ -27,8 +27,8 @@ After installing the packages, you can create a `eslint.config.mjs` file in the 
 
 ```js
 // @ts-check
-import yooBaseEslintConfig from '@yoo-digital/eslint-config-base';
 import yooAngularEslintConfig from '@yoo-digital/eslint-config-angular';
+import yooBaseEslintConfig from '@yoo-digital/eslint-config-base';
 
 export default [
   ...yooBaseEslintConfig,
