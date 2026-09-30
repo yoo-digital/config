@@ -9,7 +9,8 @@
     "lint": "pnpm lint:ts && pnpm lint:css",
     "lint:ts": "eslint -c eslint.config.mjs ./src",
     "lint:css": "stylelint './src/**/*.css'",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "next": "~16.3.3",

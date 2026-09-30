@@ -26,5 +26,8 @@ jobs:
           runtime: node@24
           cache: true
 
-      - name: Linting
+      - name: Check formatting
+        run: pnpm format:check
+
+      - name: Check linting
         run: pnpm lint

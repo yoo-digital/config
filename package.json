@@ -73,6 +73,7 @@
     "start": "turbo run start",
     "lint": "turbo run lint",
     "format": "turbo run format",
+    "format:check": "turbo run format:check",
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",

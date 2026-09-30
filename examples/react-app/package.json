@@ -10,7 +10,8 @@
     "lint:ts": "eslint ./src",
     "lint:css": "stylelint './src/**/*.css'",
     "start": "vite preview",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
     "react": "~19.2.8",

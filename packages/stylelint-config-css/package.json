@@ -77,7 +77,9 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "lint": "stylelint \"__test__/**/*.css\""
+    "lint": "stylelint \"__test__/**/*.css\"",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "engines": {
     "node": ">=24",
@@ -89,10 +91,12 @@
     "stylelint-config-property-sort-order-smacss": "~11.2.0"
   },
   "devDependencies": {
-    "stylelint": "~17.14.1",
-    "typescript": "~6.0.3"
+    "@yoo-digital/prettier": "~1.3.0",
+    "prettier": "~3.6.2",
+    "stylelint": "^17"
   },
   "peerDependencies": {
     "stylelint": "^17"
-  }
+  },
+  "prettier": "@yoo-digital/prettier"
 }

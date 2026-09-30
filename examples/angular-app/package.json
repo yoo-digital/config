@@ -10,7 +10,8 @@
     "lint": "pnpm lint:ts && pnpm lint:css",
     "lint:ts": "ng lint",
     "lint:css": "stylelint './src/**/*.css'",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "private": true,
   "dependencies": {
