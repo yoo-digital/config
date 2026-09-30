@@ -1,5 +1,32 @@
 # Change Log
 
+## 4.0.0
+
+### Major Changes
+
+- [#31](https://github.com/yoo-digital/config/pull/31) [`87ecd65`](https://github.com/yoo-digital/config/commit/87ecd65a35c0d6710cae75fecac8de78314c5854) Thanks [@RadLikeWhoa](https://github.com/RadLikeWhoa)! - Migrated to ESLint 10 and replaced `eslint-plugin-import` with `eslint-plugin-import-x`.
+
+  - Raised the `eslint` peer requirement to `^10.0.0` (from `^9.0.0`).
+  - Replaced `eslint-plugin-import` with `eslint-plugin-import-x`. All `import/*` rule keys (e.g. `import/no-extraneous-dependencies`, `import/export`) are now registered under the `import-x/*` prefix. If you have your own overrides referencing the `import/*` rule names, rename them to `import-x/*`.
+  - Removed the unused `@typescript-eslint/parser` dependency — it's already provided transitively by `typescript-eslint`, which this config depends on directly.
+  - Loosened peer dependency ranges to their actual major-version floor (e.g. `eslint-plugin-import-x` from `^4.17.1` to `^4.0.0`) instead of pinning to whatever patch we happened to develop against.
+
+### Patch Changes
+
+- [#31](https://github.com/yoo-digital/config/pull/31) [`5d887f2`](https://github.com/yoo-digital/config/commit/5d887f2d8b8041af5e8686c1944e489dbf78ea8f) Thanks [@RadLikeWhoa](https://github.com/RadLikeWhoa)! - Fixed several regressions from the ESLint 10 flat-config migration.
+
+  - `eslint-config-base`: fixed a crash (`TypeError: Unexpected array`) caused by including `typescript-eslint`'s `configs.recommended` as a single array entry instead of spreading it.
+  - `eslint-config-base`: restored `parserOptions.projectService` so type-aware rules work again.
+  - `eslint-config-react`: fixed the same `Unexpected array` crash, caused by including `eslint-config-base`'s exported config as a single array entry instead of spreading it. This crashed any project consuming `eslint-config-react` (directly or transitively, e.g. through `eslint-config-angular`'s Next.js/React examples).
+
+- [#31](https://github.com/yoo-digital/config/pull/31) [`d722c74`](https://github.com/yoo-digital/config/commit/d722c7469b5d756e6c4bede270903b83e5bea6d9) Thanks [@RadLikeWhoa](https://github.com/RadLikeWhoa)! - Fixed the TS-aware rule block matching JS/JSX files as well as TS files. `parserOptions.projectService` and all `@typescript-eslint/*` rules are now scoped to `**/*.{ts,tsx,mts,cts}` only, matching how `typescript-eslint`'s own `recommended` config scopes itself.
+
+  - Plain `.js`/`.mjs`/`.cjs`/`.jsx` files outside a tsconfig no longer fail to lint with "not found by the project service".
+  - TS-only rules (e.g. `explicit-function-return-type`) no longer fire on JS/JSX files.
+  - JS/JSX files now get the core `no-unused-vars` rule (with the same options) instead of the TS-aware variant, which requires type information.
+
+- [#31](https://github.com/yoo-digital/config/pull/31) [`0b6be92`](https://github.com/yoo-digital/config/commit/0b6be92e90a6a9de2a137eeb7d252784cd5c24cb) Thanks [@RadLikeWhoa](https://github.com/RadLikeWhoa)! - Added a hand-written `eslint.config.d.mts` declaration file (typed as `Linter.Config[]`) and wired it up via the `types` export condition, so an `eslint.config.ts` importing this package resolves correct types. No runtime behavior change.
+
 ## 4.0.0-canary.3
 
 ### Patch Changes
