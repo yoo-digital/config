@@ -73,7 +73,5 @@ public
 
 The configuration contains a set of plugins:
 
-- [@prettier/plugin-php](https://github.com/prettier/plugin-php) to add support for PHP files
 - [prettier-plugin-organize-attributes](https://github.com/NiklasPor/prettier-plugin-organize-attributes) to sort HTML element attributes in HTML files
-- [prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports) to sort import declarations in JS and TS files
-- [prettier-plugin-css-order](https://github.com/Siilwyn/prettier-plugin-css-order) to sort CSS styles in a standardised order
+- [@trivago/prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports) to sort import declarations in JS and TS files

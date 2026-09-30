@@ -1,35 +1,74 @@
 // @ts-check
-import eslint from '@eslint/js';
-import importPlugin from 'eslint-plugin-import';
-import tseslint from 'typescript-eslint';
+import js from '@eslint/js';
+import * as tsParser from '@typescript-eslint/parser';
+import { importX } from 'eslint-plugin-import-x';
+import { configs as tsEslintConfigs } from 'typescript-eslint';
 
-export default tseslint.config(
-  eslint.configs.recommended,
+export default [
+  js.configs.recommended,
+  ...tsEslintConfigs.recommended,
+  importX.flatConfigs.recommended,
+  importX.flatConfigs.typescript,
   {
-    files: ['**/*.ts', '**/*.tsx'],
-    extends: [
-      tseslint.configs.recommended,
-      importPlugin.flatConfigs.recommended,
-      importPlugin.flatConfigs.typescript,
-    ],
+    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
     languageOptions: {
+      ecmaVersion: 'latest',
+      sourceType: 'module',
+    },
+    rules: {
+      // Import rules
+      'import-x/no-extraneous-dependencies': [
+        'error',
+        {
+          devDependencies: [
+            '.storybook/**',
+            'stories/**',
+            '**/*.test.*',
+            '**/*.spec.*',
+            '**/*.config.{js,ts,mjs}',
+          ],
+        },
+      ],
+      'import-x/export': 'warn',
+
+      // Code quality rules
+      'max-depth': ['warn', 3],
+      'max-lines-per-function': [
+        'warn',
+        {
+          max: 50,
+          skipBlankLines: true,
+          skipComments: true,
+        },
+      ],
+      'no-await-in-loop': 'error',
+      'no-useless-rename': 'error',
+      'no-console': 'warn',
+      'no-unused-vars': [
+        'error',
+        {
+          args: 'all',
+          argsIgnorePattern: '^_',
+          caughtErrors: 'all',
+          caughtErrorsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+          ignoreRestSiblings: true,
+        },
+      ],
+    },
+  },
+  {
+    files: ['**/*.{ts,tsx,mts,cts}'],
+    languageOptions: {
+      parser: tsParser,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-    settings: {
-      'import/resolver': {
-        node: {
-          extensions: ['.js', '.jsx', '.mjs'],
-        },
-        typescript: {
-          extensions: ['.ts', '.tsx'],
-        },
       },
     },
     rules: {
       // TypeScript-specific rules
+      'no-unused-vars': 'off',
       '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -56,20 +95,13 @@ export default tseslint.config(
         },
       ],
       '@typescript-eslint/no-empty-object-type': 'warn',
-      'import/consistent-type-specifier-style': 'off',
 
-      // Disable base rules that can report incorrect errors with TypeScript
-      'no-useless-constructor': 'off',
+      // TypeScript-aware equivalents of base rules that can report incorrect errors with TypeScript
       '@typescript-eslint/no-useless-constructor': 'error',
-
-      'no-shadow': 'off',
       '@typescript-eslint/no-shadow': 'error',
-
-      'no-use-before-define': 'off',
       '@typescript-eslint/no-use-before-define': ['error'],
 
       // Additional TypeScript rules
-      '@typescript-eslint/no-inferrable-types': 'off',
       '@typescript-eslint/unified-signatures': 'warn',
       '@typescript-eslint/member-ordering': [
         'warn',
@@ -99,32 +131,6 @@ export default tseslint.config(
           },
         },
       ],
-      // Import rules
-      'import/no-extraneous-dependencies': [
-        'error',
-        {
-          devDependencies: [
-            '.storybook/**',
-            'stories/**',
-            '**/*.test.*',
-            '**/*.spec.*',
-            '*.config.{js,ts,mjs}',
-          ],
-        },
-      ],
-      'import/export': 'warn',
-      // Code quality rules
-      'max-depth': ['warn', 3],
-      'max-lines-per-function': [
-        'warn',
-        {
-          max: 50,
-          skipBlankLines: true,
-          skipComments: true,
-        },
-      ],
-      'no-await-in-loop': 'error',
-      'no-useless-rename': 'error',
     },
   },
   {
@@ -134,4 +140,4 @@ export default tseslint.config(
       '@typescript-eslint/no-explicit-any': 'off',
     },
   },
-);
+];

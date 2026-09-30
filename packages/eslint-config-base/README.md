@@ -30,7 +30,7 @@ npx install-peerdeps --dev @yoo-digital/eslint-config-base
 **Be aware**: The _typescript_ package is one of the peer-dependencies. The versions might collide in your project.
 Always try to use the latest versions of _typescript_ in your project.
 
-After installing the packages, you can create a [ESLint configuration file](https://eslint.org/docs/latest/use/migrate-to-9.0.0#flat-config) in the root of your project
+After installing the packages, you can create a [ESLint configuration file](https://eslint.org/docs/latest/use/migrate-to-10.0.0) in the root of your project
 and add the following lines:
 
 ```javascript

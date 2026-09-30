@@ -21,24 +21,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 ## ESLint Configuration
 
 ```js
-import { FlatCompat } from '@eslint/eslintrc';
+// @ts-check
+import nextPlugin from '@next/eslint-plugin-next';
 import yooEslintConfigReact from '@yoo-digital/eslint-config-react';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: yooEslintConfigReact,
-});
+const { configs } = nextPlugin;
 
 const eslintConfig = [
   {
     ignores: ['node_modules/**', 'dist/**', 'build/**', '.next/**'],
   },
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  configs.recommended,
+  ...yooEslintConfigReact,
 ];
 
 export default eslintConfig;

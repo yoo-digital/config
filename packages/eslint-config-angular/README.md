@@ -28,25 +28,16 @@ After installing the packages, you can create a `eslint.config.mjs` file in the 
 ```js
 // @ts-check
 import yooAngularEslintConfig from '@yoo-digital/eslint-config-angular';
-
-// Optional
-// import yooBaseEslintConfig from '@yoo-digital/eslint-config-base';
+import yooBaseEslintConfig from '@yoo-digital/eslint-config-base';
 
 export default [
-  // Optional
-  // ...yooBaseEslintConfig,
+  ...yooBaseEslintConfig,
   ...yooAngularEslintConfig,
-  {
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.json', './tsconfig.app.json', './tsconfig.spec.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-    },
-  },
   // your own rules
 ];
 ```
+
+**Be aware**: this configuration must always be combined with [`@yoo-digital/eslint-config-base`](https://www.npmjs.com/package/@yoo-digital/eslint-config-base) — it relies on rules and TypeScript project-service parsing registered there and will fail to lint on its own.
 
 You can apply your own set of rules on top of that, but do not turn off any of the rules, except it is an obstacle and making your life harder. Check the chapter below, for a complete set of rules that can be applied.
 

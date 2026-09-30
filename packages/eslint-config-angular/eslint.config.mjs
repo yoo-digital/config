@@ -1,8 +1,8 @@
 // @ts-check
 import angular from 'angular-eslint';
-import tseslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
-export default tseslint.config(
+export default defineConfig(
   {
     files: ['**/*.ts'],
     extends: [...angular.configs.tsRecommended],
@@ -58,8 +58,6 @@ export default tseslint.config(
       ],
       '@angular-eslint/use-component-view-encapsulation': 'warn',
       '@angular-eslint/use-injectable-provided-in': 'error',
-      'class-methods-use-this': 'off',
-      'import/prefer-default-export': 'off',
       'no-underscore-dangle': [
         'error',
         {
@@ -81,7 +79,6 @@ export default tseslint.config(
       '@angular-eslint/template/no-any': 'error',
       '@angular-eslint/template/no-duplicate-attributes': 'error',
       '@angular-eslint/template/no-interpolation-in-attributes': 'error',
-      '@angular-eslint/template/prefer-control-flow': 'error',
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
       '@angular-eslint/template/prefer-static-string-properties': 'error',
       '@angular-eslint/template/prefer-template-literal': 'error',
