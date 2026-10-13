@@ -203,6 +203,9 @@ importers:
 
   packages/eslint-config-angular:
     devDependencies:
+      '@yoo-digital/eslint-plugin-angular':
+        specifier: ~4.1.0
+        version: 4.1.0(@angular-eslint/eslint-plugin@22.5.0(@typescript-eslint/utils@8.68.0(eslint@10.11.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3))(@angular-eslint/template-parser@22.5.0(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3))(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3)
       angular-eslint:
         specifier: ~22.5.0
         version: 22.5.0(chokidar@5.0.0)(eslint@10.11.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript-eslint@8.71.0(eslint@10.11.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(typescript@6.0.3)
@@ -2686,6 +2689,14 @@ packages:
 
   '@vitest/utils@4.1.11':
     resolution: {integrity: sha512-zTCVGpyFsGWBhllOyKlTw/vnr6D9qxsfSDyfbyZmTyjHw5N/VuvzHpHoQjm2ZJzn4RJgx5w4r7V0er69CmLgPQ==}
+
+  '@yoo-digital/eslint-plugin-angular@4.1.0':
+    resolution: {integrity: sha512-elLx+3MM1nW2J9r43/7iolOAW0X8LV7NcyrP6/zMqg+64jj6tBp0YfvjaeEszAGcpAb2I5YzjkIqVUA31lTz/A==}
+    peerDependencies:
+      '@angular-eslint/eslint-plugin': '>=19.0.0'
+      '@angular-eslint/template-parser': '>=19.0.0'
+      eslint: ^9.0.0 || ^10.0.0
+      typescript: '>=5.5.0 || ^6.0.0'
 
   accepts@2.0.0:
     resolution: {integrity: sha512-5cvg6CtKwfgdmVqY1WIiXKc3Q1bkRqGLi+2W/6ao+6Y7gu/RCwRuAhGEzh5B4KlszSuTLgZYuqFqo5bImjNKng==}
@@ -6995,6 +7006,13 @@ snapshots:
       '@vitest/pretty-format': 4.1.11
       convert-source-map: 2.0.0
       tinyrainbow: 3.1.1
+
+  '@yoo-digital/eslint-plugin-angular@4.1.0(@angular-eslint/eslint-plugin@22.5.0(@typescript-eslint/utils@8.68.0(eslint@10.11.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3))(@angular-eslint/template-parser@22.5.0(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3))(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3)':
+    dependencies:
+      '@angular-eslint/eslint-plugin': 22.5.0(@typescript-eslint/utils@8.68.0(eslint@10.11.0(supports-color@10.2.2))(supports-color@10.2.2)(typescript@6.0.3))(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3)
+      '@angular-eslint/template-parser': 22.5.0(eslint@10.11.0(supports-color@10.2.2))(typescript@6.0.3)
+      eslint: 10.11.0(supports-color@10.2.2)
+      typescript: 6.0.3
 
   accepts@2.0.0:
     dependencies:

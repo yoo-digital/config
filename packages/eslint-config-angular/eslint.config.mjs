@@ -1,11 +1,12 @@
 // @ts-check
+import yooAngular from '@yoo-digital/eslint-plugin-angular';
 import angular from 'angular-eslint';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig(
   {
     files: ['**/*.ts'],
-    extends: [...angular.configs.tsRecommended],
+    extends: [...angular.configs.tsRecommended, ...yooAngular.configs.recommended],
     processor: angular.processInlineTemplates,
     rules: {
       '@angular-eslint/component-selector': [
@@ -58,6 +59,7 @@ export default defineConfig(
       ],
       '@angular-eslint/use-component-view-encapsulation': 'warn',
       '@angular-eslint/use-injectable-provided-in': 'error',
+      '@yoo-digital/eslint-plugin-angular/boolean-input': 'warn',
       'no-underscore-dangle': [
         'error',
         {
@@ -74,7 +76,11 @@ export default defineConfig(
   },
   {
     files: ['**/*.html'],
-    extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
+    extends: [
+      ...angular.configs.templateRecommended,
+      ...angular.configs.templateAccessibility,
+      ...yooAngular.configs.recommended,
+    ],
     rules: {
       '@angular-eslint/template/no-any': 'error',
       '@angular-eslint/template/no-duplicate-attributes': 'error',
@@ -82,6 +88,7 @@ export default defineConfig(
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
       '@angular-eslint/template/prefer-static-string-properties': 'error',
       '@angular-eslint/template/prefer-template-literal': 'error',
+      '@yoo-digital/eslint-plugin-angular/boolean-attribute-shorthand': 'warn',
     },
   },
   {
