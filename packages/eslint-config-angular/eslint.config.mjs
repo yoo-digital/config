@@ -72,7 +72,6 @@ export default defineConfig(
     files: ['**/*.spec.ts', '**/*.test.ts'],
     rules: {
       '@angular-eslint/prefer-on-push-component-change-detection': 'off',
-      '@yoo-digital/eslint-plugin-angular/boolean-attribute-shorthand': 'warn',
     },
   },
   {
@@ -89,6 +88,7 @@ export default defineConfig(
       '@angular-eslint/template/prefer-self-closing-tags': 'error',
       '@angular-eslint/template/prefer-static-string-properties': 'error',
       '@angular-eslint/template/prefer-template-literal': 'error',
+      '@yoo-digital/eslint-plugin-angular/boolean-attribute-shorthand': 'warn',
     },
   },
   {
