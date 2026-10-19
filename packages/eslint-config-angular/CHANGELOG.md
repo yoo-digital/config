@@ -1,5 +1,11 @@
 # Change Log
 
+## 22.2.0
+
+### Minor Changes
+
+- [#34](https://github.com/yoo-digital/config/pull/34) [`c58332e`](https://github.com/yoo-digital/config/commit/c58332e3fa9857a75d2d78c31ea41894f7c8b247) Thanks [@RadLikeWhoa](https://github.com/RadLikeWhoa)! - Include @yoo-digital/eslint-plugin-angular to provide custom linting rules.
+
 ## 22.1.0
 
 ### Minor Changes
