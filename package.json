@@ -87,7 +87,7 @@
     "@changesets/cli": "~3.0.3",
     "@yoo-digital/oxfmt-config": "workspace:~",
     "oxfmt": "~0.76.0",
-    "turbo": "~2.11.5"
+    "turbo": "~2.11.10"
   },
   "packageManager": "pnpm@11.24.0",
   "engines": {
