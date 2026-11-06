@@ -36,8 +36,8 @@ _This repo contains reusable ESLint, Oxlint, Stylelint, Prettier and Oxfmt confi
 
 ### Oxfmt
 
-| Package                           | NPM                                                                                                                     | Description                               |
-| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Package                                         | NPM                                                                                                                                   | Description                               |
+| ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
 | [oxfmt-config](packages/oxfmt-config/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Foxfmt-config.svg)](https://www.npmjs.com/package/@yoo-digital/oxfmt-config) | Reusable oxfmt configuration for projects |
 
 ## Introduction
@@ -129,5 +129,5 @@ Apart from the configuration packages, it also contains example repositories to 
 The packages to publish are located in the `packages` directory, while the example repositories are located in the `examples` directory.
 
 The repository itself is formatted with [oxfmt](https://oxc.rs/docs/guide/usage/formatter), using the `@yoo-digital/oxfmt-config` configuration (see `oxfmt.config.mts`).
-Run `pnpm format` to format all packages, or `pnpm format:check` to verify the formatting.
+Run `pnpm format` to format the repository, or `pnpm format:check` to verify the formatting.
 The files in `packages/prettier/examples` are excluded, as they are checked with Prettier to test the published Prettier configuration (`pnpm lint`).

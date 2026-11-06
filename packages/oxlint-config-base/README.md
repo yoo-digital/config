@@ -66,7 +66,7 @@ On top of that, the following rules are adjusted:
 | `typescript/no-empty-object-type`          | warn                                                         |
 | `typescript/no-explicit-any`               | error                                                        |
 
-In tests and stories (`.storybook/**`, `stories/**`, `**/*.stories.*`, `**/*.test.*`, `**/*.spec.*`),
+In tests and stories (`**/.storybook/**`, `**/stories/**`, `**/*.stories.*`, `**/*.test.*`, `**/*.spec.*`),
 `max-lines-per-function` and `typescript/no-explicit-any` are disabled.
 
 ## Development

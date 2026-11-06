@@ -33,7 +33,7 @@ export default defineConfig({
   },
   overrides: [
     {
-      files: ['.storybook/**', 'stories/**', '**/*.stories.*', '**/*.test.*', '**/*.spec.*'],
+      files: ['**/.storybook/**', '**/stories/**', '**/*.stories.*', '**/*.test.*', '**/*.spec.*'],
       rules: {
         'max-lines-per-function': 'off',
         'typescript/no-explicit-any': 'off',

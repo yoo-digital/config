@@ -9,9 +9,7 @@
     "test": "ng test",
     "lint": "pnpm lint:ts && pnpm lint:css",
     "lint:ts": "ng lint",
-    "lint:css": "stylelint './src/**/*.css'",
-    "format": "oxfmt -c ../../oxfmt.config.mts",
-    "format:check": "oxfmt -c ../../oxfmt.config.mts --check"
+    "lint:css": "stylelint './src/**/*.css'"
   },
   "private": true,
   "dependencies": {

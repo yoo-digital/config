@@ -6,32 +6,15 @@
       "cache": false
     },
     "build": {
-      "dependsOn": [
-        "lint",
-        "^build"
-      ],
-      "outputs": [
-        "dist",
-        "out",
-        ".next"
-      ]
+      "dependsOn": ["lint", "^build"],
+      "outputs": ["dist", "out", ".next"]
     },
     "start": {
       "persistent": true,
       "cache": false,
-      "dependsOn": [
-        "build"
-      ]
+      "dependsOn": ["build"]
     },
-    "lint": {},
-    "format": {
-      "cache": false
-    },
-    "format:check": {
-      "cache": false
-    }
+    "lint": {}
   },
-  "globalDependencies": [
-    "tsconfig.json"
-  ]
+  "globalDependencies": ["tsconfig.json"]
 }

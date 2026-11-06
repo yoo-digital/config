@@ -6,8 +6,14 @@ _This package contains a reusable [oxfmt](https://oxc.rs/docs/guide/usage/format
 
 ## Introduction
 
-The configuration is based on the [YOO Prettier configuration](https://www.npmjs.com/package/@yoo-digital/prettier)
-and produces the same output in most cases, without requiring any plugins.
+The configuration builds on oxfmt's defaults and adds the following settings:
+
+- Single quotes in JavaScript and TypeScript, double quotes in CSS, SCSS and HTML
+- One attribute per line in HTML and JSX
+- Sorted imports, without blank lines between import groups
+- `package.json` files are not sorted
+- HTML files use a print width of 120
+- Angular component templates are formatted with the Angular parser (see [Angular templates](#angular-templates))
 
 ## Using the Configuration
 
@@ -43,7 +49,7 @@ For a complete overview of configuration options please refer to the [official d
 
 ## Ignoring files
 
-oxfmt respects `.gitignore` and `.prettierignore` files. Alternatively, use the `ignorePatterns` option.
+oxfmt respects `.gitignore` files. Use the `ignorePatterns` option to ignore additional files.
 
 ## Angular templates
 

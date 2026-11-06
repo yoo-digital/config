@@ -77,9 +77,7 @@
     "tsconfig.json"
   ],
   "scripts": {
-    "lint": "stylelint \"__test__/**/*.scss\"",
-    "format": "oxfmt -c ../../oxfmt.config.mts",
-    "format:check": "oxfmt -c ../../oxfmt.config.mts --check"
+    "lint": "stylelint \"__test__/**/*.scss\""
   },
   "engines": {
     "node": ">=24",
