@@ -10,8 +10,8 @@
     "lint": "pnpm lint:ts && pnpm lint:css",
     "lint:ts": "ng lint",
     "lint:css": "stylelint './src/**/*.css'",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format": "oxfmt -c ../../oxfmt.config.mts",
+    "format:check": "oxfmt -c ../../oxfmt.config.mts --check"
   },
   "private": true,
   "dependencies": {
@@ -29,9 +29,8 @@
     "@angular/build": "~22.1.6",
     "@angular/cli": "~22.1.6",
     "@angular/compiler-cli": "~22.1.4",
-    "@yoo-digital/eslint-config-base": "workspace:~",
     "@yoo-digital/eslint-config-angular": "workspace:~",
-    "@yoo-digital/prettier": "workspace:~",
+    "@yoo-digital/eslint-config-base": "workspace:~",
     "@yoo-digital/stylelint-config-css": "workspace:~",
     "angular-eslint": "~22.1.0",
     "eslint": "~10.9.1",

@@ -1,11 +1,25 @@
 {
   "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
-  "changelog": ["@changesets/changelog-github", { "repo": "yoo-digital/config" }],
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "yoo-digital/config"
+    }
+  ],
   "commit": false,
-  "fixed": [["@yoo-digital/eslint-config-base", "@yoo-digital/eslint-config-react"]],
+  "fixed": [
+    ["@yoo-digital/eslint-config-base", "@yoo-digital/eslint-config-react"],
+    [
+      "@yoo-digital/oxlint-config-base",
+      "@yoo-digital/oxlint-config-react",
+      "@yoo-digital/oxlint-config-nextjs"
+    ]
+  ],
   "linked": [
     ["@yoo-digital/eslint-config-angular"],
+    ["@yoo-digital/oxlint-config-vitest"],
     ["@yoo-digital/prettier"],
+    ["@yoo-digital/oxfmt-config"],
     ["@yoo-digital/stylelint-config-css"],
     ["@yoo-digital/stylelint-config-sass"]
   ],

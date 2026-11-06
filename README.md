@@ -1,17 +1,44 @@
 # YOO Config Monorepo
 
-_This repo contains eslint-configurations, a reusable prettier configuration and a styleling configuration for SCSS to use in projects @ YOO._
+_This repo contains reusable ESLint, Oxlint, Stylelint, Prettier and Oxfmt configurations to use in projects @ YOO._
 
 ## Content
 
-| Package                                                           | NPM                                                                                                                                                     | Description                                  |
-| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [stylelint-config-css](packages/stylelint-config-css/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fstylelint-config-css.svg)](https://www.npmjs.com/package/@yoo-digital/stylelint-config-css) | Stylelint configuration for CSS projects    |
-| [stylelint-config-sass](packages/stylelint-config-sass/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fstylelint-config-sass.svg)](https://www.npmjs.com/package/@yoo-digital/stylelint-config-sass) | Stylelint configuration for SASS projects    |
-| [eslint-config-base](packages/eslint-config-base/README.md)       | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-base.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-base)       | Base ESLint configuration for all projects   |
-| [eslint-config-react](packages/eslint-config-react/README.md)     | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-react.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-react)     | ESLint configuration for React projects      |
-| [eslint-config-angular](packages/eslint-config-angular/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-angular) | ESLint configuration for Angular projects    |
-| [prettier](packages/prettier/README.md)                           | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fprettier.svg)](https://www.npmjs.com/package/@yoo-digital/prettier)                           | Reusable Prettier configuration for projects |
+### Stylelint
+
+| Package                                                           | NPM                                                                                                                                                     | Description                               |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [stylelint-config-css](packages/stylelint-config-css/README.md)   | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fstylelint-config-css.svg)](https://www.npmjs.com/package/@yoo-digital/stylelint-config-css)   | Stylelint configuration for CSS projects  |
+| [stylelint-config-sass](packages/stylelint-config-sass/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fstylelint-config-sass.svg)](https://www.npmjs.com/package/@yoo-digital/stylelint-config-sass) | Stylelint configuration for SASS projects |
+
+### ESLint
+
+| Package                                                           | NPM                                                                                                                                                     | Description                                |
+| ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| [eslint-config-base](packages/eslint-config-base/README.md)       | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-base.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-base)       | Base ESLint configuration for all projects |
+| [eslint-config-react](packages/eslint-config-react/README.md)     | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-react.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-react)     | ESLint configuration for React projects    |
+| [eslint-config-angular](packages/eslint-config-angular/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Feslint-config-angular.svg)](https://www.npmjs.com/package/@yoo-digital/eslint-config-angular) | ESLint configuration for Angular projects  |
+
+### Oxlint
+
+| Package                                                         | NPM                                                                                                                                                   | Description                                 |
+| --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [oxlint-config-base](packages/oxlint-config-base/README.md)     | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Foxlint-config-base.svg)](https://www.npmjs.com/package/@yoo-digital/oxlint-config-base)     | Base Oxlint configuration for all projects  |
+| [oxlint-config-react](packages/oxlint-config-react/README.md)   | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Foxlint-config-react.svg)](https://www.npmjs.com/package/@yoo-digital/oxlint-config-react)   | Oxlint configuration for React projects     |
+| [oxlint-config-nextjs](packages/oxlint-config-nextjs/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Foxlint-config-nextjs.svg)](https://www.npmjs.com/package/@yoo-digital/oxlint-config-nextjs) | Oxlint configuration for Next.js projects   |
+| [oxlint-config-vitest](packages/oxlint-config-vitest/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Foxlint-config-vitest.svg)](https://www.npmjs.com/package/@yoo-digital/oxlint-config-vitest) | Oxlint configuration for Vitest test suites |
+
+### Prettier
+
+| Package                                 | NPM                                                                                                                           | Description                                  |
+| --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
+| [prettier](packages/prettier/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Fprettier.svg)](https://www.npmjs.com/package/@yoo-digital/prettier) | Reusable Prettier configuration for projects |
+
+### Oxfmt
+
+| Package                           | NPM                                                                                                                     | Description                               |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| [oxfmt-config](packages/oxfmt-config/README.md) | [![npm version](https://badge.fury.io/js/%40yoo-digital%2Foxfmt-config.svg)](https://www.npmjs.com/package/@yoo-digital/oxfmt-config) | Reusable oxfmt configuration for projects |
 
 ## Introduction
 
@@ -98,5 +125,9 @@ See [changesets pre-releases](https://github.com/changesets/changesets/blob/c7b6
 ## Development
 
 This repository is a monorepo that makes use of pnpm workspaces and Turbo for task orchestration.
-Apart from the eslint-configurations and prettier configuration, it also example repositories to test the configurations against.
+Apart from the configuration packages, it also contains example repositories to test the configurations against.
 The packages to publish are located in the `packages` directory, while the example repositories are located in the `examples` directory.
+
+The repository itself is formatted with [oxfmt](https://oxc.rs/docs/guide/usage/formatter), using the `@yoo-digital/oxfmt-config` configuration (see `oxfmt.config.mts`).
+Run `pnpm format` to format all packages, or `pnpm format:check` to verify the formatting.
+The files in `packages/prettier/examples` are excluded, as they are checked with Prettier to test the published Prettier configuration (`pnpm lint`).

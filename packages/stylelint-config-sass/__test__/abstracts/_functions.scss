@@ -79,15 +79,15 @@
   $components: split($layer, " ");
 
   @if not map.has-key($z-indexes, list.nth($components, list.length($components))) {
-    @warn "No z-index layer called "#{list.nth($components, 1)}" was found. Possible values include: #{map-keys($z-indexes)}";
+    @warn "No z-index layer called '#{list.nth($components, 1)}' was found. Possible values include: #{map-keys($z-indexes)}";
     @return null;
   }
 
   @if list.length($components) == 1 {
     @return map.get($z-indexes, $components);
   } @else if list.length($components) == 2 {
-    @if not(list.nth($components, 1) == "above" or list.nth($components, 1) == "below") {
-      @warn "Invalid layer modifier. Possible values include: "above", "below"";
+    @if not (list.nth($components, 1) == "above" or list.nth($components, 1) == "below") {
+      @warn "Invalid layer modifier. Possible values include: 'above', 'below'";
       @return null;
     }
 

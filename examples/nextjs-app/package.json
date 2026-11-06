@@ -6,11 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "pnpm lint:ts && pnpm lint:css",
+    "lint": "pnpm lint:ts && pnpm lint:oxlint && pnpm lint:css",
     "lint:ts": "eslint -c eslint.config.mjs ./src",
+    "lint:oxlint": "oxlint ./src",
     "lint:css": "stylelint './src/**/*.css'",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "format": "oxfmt -c ../../oxfmt.config.mts",
+    "format:check": "oxfmt -c ../../oxfmt.config.mts --check"
   },
   "dependencies": {
     "next": "~16.3.3",
@@ -24,10 +25,11 @@
     "@types/react": "~19.2.18",
     "@types/react-dom": "~19.2.5",
     "@yoo-digital/eslint-config-react": "workspace:~",
-    "@yoo-digital/prettier": "workspace:~",
+    "@yoo-digital/oxlint-config-nextjs": "workspace:~",
     "@yoo-digital/stylelint-config-css": "workspace:~",
     "eslint": "~10.9.1",
-    "prettier": "~3.9.6",
+    "oxlint": "~1.91.0",
+    "oxlint-tsgolint": "~7.0.2005",
     "stylelint": "~17.14.1",
     "typescript": "~6.0.3"
   },
