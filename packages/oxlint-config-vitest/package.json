@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/oxlint-config-vitest",
   "description": "Oxlint configuration file containing rules for Vitest test suites",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
