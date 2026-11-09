@@ -1,7 +1,7 @@
 {
   "name": "@yoo-digital/oxlint-config-react",
   "description": "Oxlint configuration file containing rules for React projects using TypeScript",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "publishConfig": {
     "access": "public"

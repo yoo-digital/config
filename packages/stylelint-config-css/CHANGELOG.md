@@ -1,5 +1,11 @@
 # Change log
 
+## 1.0.2
+
+### Patch Changes
+
+- [#37](https://github.com/yoo-digital/config/pull/37) [`2a5eda8`](https://github.com/yoo-digital/config/commit/2a5eda89cb62f6212bd9400bd6ed7a01779e65bc) Thanks [@RadLikeWhoa](https://github.com/RadLikeWhoa)! - Update stylelint-order to 8.1.3
+
 ## 1.0.1
 
 ### Patch Changes
