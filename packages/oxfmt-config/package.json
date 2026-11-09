@@ -1,6 +1,6 @@
 {
   "name": "@yoo-digital/oxfmt-config",
-  "version": "0.1.0",
+  "version": "0.1.1-canary.0",
   "description": "Reusable oxfmt configuration for projects within YOO AG",
   "license": "MIT",
   "publishConfig": {

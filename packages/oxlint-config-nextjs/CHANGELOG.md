@@ -1,5 +1,13 @@
 # @yoo-digital/oxlint-config-nextjs
 
+## 0.1.1-canary.0
+
+### Patch Changes
+
+- [#39](https://github.com/yoo-digital/config/pull/39) [`6fb7229`](https://github.com/yoo-digital/config/commit/6fb72290c39a468a7bf51692be4b0302672b4bc8) Thanks [@yoo-mat](https://github.com/yoo-mat)! - Publish initial 0.1.1-canary.0 to verify NPM trusted publisher settings
+- Updated dependencies [[`6fb7229`](https://github.com/yoo-digital/config/commit/6fb72290c39a468a7bf51692be4b0302672b4bc8)]:
+  - @yoo-digital/oxlint-config-react@0.1.1-canary.0
+
 ## 0.1.0
 
 ### Minor Changes
