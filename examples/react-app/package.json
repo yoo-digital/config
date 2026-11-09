@@ -6,31 +6,31 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "pnpm lint:ts && pnpm lint:css",
+    "lint": "pnpm lint:ts && pnpm lint:oxlint && pnpm lint:css",
     "lint:ts": "eslint ./src",
+    "lint:oxlint": "oxlint ./src",
     "lint:css": "stylelint './src/**/*.css'",
-    "start": "vite preview",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "start": "vite preview"
   },
   "dependencies": {
-    "react": "~19.2.8",
-    "react-dom": "~19.2.8"
+    "react": "~19.3.1",
+    "react-dom": "~19.3.1"
   },
   "devDependencies": {
-    "@types/react": "~19.2.18",
-    "@types/react-dom": "~19.2.5",
-    "@vitejs/plugin-react": "~6.1.0",
+    "@types/react": "~19.3.0",
+    "@types/react-dom": "~19.3.0",
+    "@vitejs/plugin-react": "~6.2.1",
     "@yoo-digital/eslint-config-react": "workspace:~",
-    "@yoo-digital/prettier": "workspace:~",
+    "@yoo-digital/oxlint-config-react": "workspace:~",
     "@yoo-digital/stylelint-config-css": "workspace:~",
-    "eslint": "~10.9.1",
+    "eslint": "~10.14.0",
     "eslint-import-resolver-typescript": "~4.4.5",
     "eslint-plugin-react-hooks": "~7.1.1",
-    "prettier": "~3.9.6",
+    "oxlint": "~1.91.0",
+    "oxlint-tsgolint": "~7.0.2005",
     "stylelint": "~17.14.1",
     "typescript": "~6.0.3",
-    "vite": "~8.2.2"
+    "vite": "~8.3.6"
   },
   "engines": {
     "node": ">=24",

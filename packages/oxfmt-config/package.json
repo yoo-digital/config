@@ -1,0 +1,89 @@
+{
+  "name": "@yoo-digital/oxfmt-config",
+  "version": "0.0.0",
+  "description": "Reusable oxfmt configuration for projects within YOO AG",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "Oxfmt",
+    "Formatter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yoo-digital/config.git",
+    "directory": "packages/oxfmt-config"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yoo.digital"
+    },
+    {
+      "name": "Hervé Brunner",
+      "email": "herve.brunner@yoo.digital"
+    },
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yoo.digital"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
+    },
+    {
+      "name": "Tobias Wahl",
+      "email": "tobias.wahl@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yoo.digital"
+    }
+  ],
+  "exports": {
+    ".": {
+      "types": "./oxfmt.config.d.mts",
+      "import": "./oxfmt.config.mjs"
+    }
+  },
+  "types": "./oxfmt.config.d.mts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "oxfmt.config.d.mts",
+    "oxfmt.config.mjs"
+  ],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
+  "devDependencies": {
+    "oxfmt": "~0.76.0",
+    "typescript": "~6.0.3"
+  },
+  "peerDependencies": {
+    "oxfmt": ">=0.76.0 <1"
+  }
+}

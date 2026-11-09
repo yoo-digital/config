@@ -6,28 +6,28 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "pnpm lint:ts && pnpm lint:css",
+    "lint": "pnpm lint:ts && pnpm lint:oxlint && pnpm lint:css",
     "lint:ts": "eslint -c eslint.config.mjs ./src",
-    "lint:css": "stylelint './src/**/*.css'",
-    "format": "prettier --write .",
-    "format:check": "prettier --check ."
+    "lint:oxlint": "oxlint ./src",
+    "lint:css": "stylelint './src/**/*.css'"
   },
   "dependencies": {
-    "next": "~16.3.3",
-    "react": "~19.2.8",
-    "react-dom": "~19.2.8"
+    "next": "~16.4.5",
+    "react": "~19.3.1",
+    "react-dom": "~19.3.1"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "~3.3.6",
-    "@next/eslint-plugin-next": "~16.3.3",
-    "@types/node": "~24.13.3",
-    "@types/react": "~19.2.18",
-    "@types/react-dom": "~19.2.5",
+    "@eslint/eslintrc": "~3.3.7",
+    "@next/eslint-plugin-next": "~16.4.5",
+    "@types/node": "~24.19.2",
+    "@types/react": "~19.3.0",
+    "@types/react-dom": "~19.3.0",
     "@yoo-digital/eslint-config-react": "workspace:~",
-    "@yoo-digital/prettier": "workspace:~",
+    "@yoo-digital/oxlint-config-nextjs": "workspace:~",
     "@yoo-digital/stylelint-config-css": "workspace:~",
-    "eslint": "~10.9.1",
-    "prettier": "~3.9.6",
+    "eslint": "~10.14.0",
+    "oxlint": "~1.91.0",
+    "oxlint-tsgolint": "~7.0.2005",
     "stylelint": "~17.14.1",
     "typescript": "~6.0.3"
   },

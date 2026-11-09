@@ -8,8 +8,11 @@
     "YOO",
     "Mono Repository",
     "Configuration",
-    "Prettier",
     "ESLint",
+    "Oxlint",
+    "Oxfmt",
+    "Prettier",
+    "Stylelint",
     "TypeScript"
   ],
   "repository": {
@@ -72,8 +75,8 @@
     "build": "turbo run build",
     "start": "turbo run start",
     "lint": "turbo run lint",
-    "format": "turbo run format",
-    "format:check": "turbo run format:check",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
     "changeset": "changeset",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
@@ -82,11 +85,9 @@
   "devDependencies": {
     "@changesets/changelog-github": "~1.0.1",
     "@changesets/cli": "~3.0.3",
-    "@trivago/prettier-plugin-sort-imports": "~6.0.2",
-    "@yoo-digital/prettier": "workspace:~",
-    "prettier": "~3.9.9",
-    "prettier-plugin-organize-attributes": "~1.0.0",
-    "turbo": "~2.11.5"
+    "@yoo-digital/oxfmt-config": "workspace:~",
+    "oxfmt": "~0.76.0",
+    "turbo": "~2.11.10"
   },
   "packageManager": "pnpm@11.24.0",
   "engines": {

@@ -1,0 +1,91 @@
+{
+  "name": "@yoo-digital/oxlint-config-base",
+  "description": "Oxlint configuration file containing rules for TypeScript projects",
+  "version": "0.0.0",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "TypeScript",
+    "Oxlint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yoo-digital/config.git",
+    "directory": "packages/oxlint-config-base"
+  },
+  "author": {
+    "name": "YOO AG",
+    "email": "info@yoo.digital",
+    "url": "https://www.yoo.digital/"
+  },
+  "contributors": [
+    {
+      "name": "Björn Bühler",
+      "email": "bjoern.buehler@yoo.digital"
+    },
+    {
+      "name": "Cédric Madörin",
+      "email": "cedric.madoerin@yoo.digital"
+    },
+    {
+      "name": "Emanuel Marsicovetere",
+      "email": "emanuel.marsicovetere@yoo.digital"
+    },
+    {
+      "name": "Hervé Brunner",
+      "email": "herve.brunner@yoo.digital"
+    },
+    {
+      "name": "Kelvin Louis",
+      "email": "kelvin.louis@yoo.digital"
+    },
+    {
+      "name": "Robin Hahne",
+      "email": "robin.hahne@yoo.digital"
+    },
+    {
+      "name": "Sacha Schmid",
+      "email": "sacha.schmid@yoo.digital"
+    },
+    {
+      "name": "Tobias Maier",
+      "email": "tobias.maier@yoo.digital"
+    },
+    {
+      "name": "Tobias Wahl",
+      "email": "tobias.wahl@yoo.digital"
+    },
+    {
+      "name": "Yanick Recher",
+      "email": "yanick.recher@yoo.digital"
+    }
+  ],
+  "exports": {
+    ".": {
+      "types": "./oxlint.config.d.mts",
+      "import": "./oxlint.config.mjs"
+    }
+  },
+  "types": "./oxlint.config.d.mts",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "oxlint.config.d.mts",
+    "oxlint.config.mjs"
+  ],
+  "engines": {
+    "node": ">=24",
+    "pnpm": ">=11"
+  },
+  "devDependencies": {
+    "oxlint": "~1.91.0",
+    "oxlint-tsgolint": "~7.0.2005",
+    "typescript": "~6.0.3"
+  },
+  "peerDependencies": {
+    "oxlint": "^1.91.0",
+    "oxlint-tsgolint": "^7.0.2005"
+  }
+}
