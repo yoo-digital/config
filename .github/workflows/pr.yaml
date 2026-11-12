@@ -15,13 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
         with:
           # This ensures we get the full git history for changesets
           fetch-depth: 0
 
       - name: Setup pnpm and node
-        uses: pnpm/setup@v2
+        uses: pnpm/setup@v2.1.0
         with:
           runtime: node@24
           cache: true

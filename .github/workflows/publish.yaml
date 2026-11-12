@@ -17,17 +17,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
 
       - name: Setup pnpm and node
-        uses: pnpm/setup@v2
+        uses: pnpm/setup@v2.1.0
         with:
           runtime: node@24
           cache: true
 
       - name: Create release pull request or publish to npm
         id: changesets
-        uses: changesets/action@v2
+        uses: changesets/action@v2.1.2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # This expects you to have a script called release which does a build for your packages and calls changeset publish
